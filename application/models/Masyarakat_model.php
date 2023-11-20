@@ -33,4 +33,20 @@ class Masyarakat_model extends CI_Model {
         return $this->db->delete('masyarakat');
     }
 
+    public function countGender() {
+        // Menghitung jumlah laki-laki
+        $query_laki = $this->db->where('jenis_kelamin', 'Laki-laki')->get('masyarakat');
+        $count_laki = $query_laki->num_rows();
+
+        // Menghitung jumlah perempuan
+        $query_perempuan = $this->db->where('jenis_kelamin', 'Perempuan')->get('masyarakat');
+        $count_perempuan = $query_perempuan->num_rows();
+
+        // Mengembalikan hasil dalam bentuk array
+        return array(
+            'laki-laki' => $count_laki,
+            'perempuan' => $count_perempuan
+        );
+    }
+
 }

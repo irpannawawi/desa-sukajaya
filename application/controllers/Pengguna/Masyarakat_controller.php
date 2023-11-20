@@ -12,7 +12,7 @@ class Masyarakat_controller extends CI_Controller {
 
 	public function index()
 	{
-        $data['masyarakat'] = $this->masyarakat_model->get_all()->result();
+        $data['masyarakat'] = $this->masyarakat_model->get_where(['no_kk'=>$this->session->no_kk])->result();
         $data['_view'] = 'pengguna/masyarakat/data_masyarakat';
 		$this->load->view('templates/main_layout', $data);
 	}

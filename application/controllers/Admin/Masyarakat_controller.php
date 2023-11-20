@@ -23,6 +23,7 @@ class Masyarakat_controller extends CI_Controller {
         
         $userdata = [
             'nik'=>$this->input->post('nik'),
+            'no_kk'=>$this->input->post('no_kk'),
             'nama'=>$this->input->post('nama'),
             'dusun'=>$this->input->post('dusun'),
             'rt'=>$this->input->post('rt'),

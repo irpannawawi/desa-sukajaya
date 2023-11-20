@@ -49,9 +49,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['default_controller'] = 'authenticate/login';
+$route['default_controller'] = 'home/index';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+$route['informasi'] = 'home/information';
 
 // AUTHENTICATING
 $route['login'] = 'authenticate/login';
@@ -79,6 +81,8 @@ $route['admin/masyarakat/(:num)'] = 'admin/masyarakat_controller/edit/$1';
 $route['admin/masyarakat/update'] = 'admin/masyarakat_controller/update';
 $route['admin/masyarakat/delete/(:num)'] = 'admin/masyarakat_controller/delete/$1';
 $route['check_nik'] = 'Check/check_nik';
+
+
 
 // SURAT-SURAT
 // kematian
@@ -119,6 +123,9 @@ $route['download/surat_keterangan_usaha/(:num)'] = 'Exporter_controller/surat_ke
 
 // PENGGUNA
 $route['pengguna'] = 'pengguna/dashboard/index';
+
+// keluarga 
+$route['pengguna/masyarakat'] = 'pengguna/masyarakat_controller/index';
 
 // SURAT-SURAT
 // kematian

@@ -49,11 +49,13 @@ class Authenticate extends CI_Controller {
 		}
 
 		// set session
+		$dataMasyarakat = $this->masyarakat_model->get_where(['nik'=>$user->nik])->result()[0];
 		$userdata = [
 			'uid'=>$user->uid,
 			'username'=>$user->username,
 			'role'=>$user->role,
 			'nik'=>$user->nik,
+			'no_kk'=>$dataMasyarakat->no_kk,
 		];
 		$this->session->set_userdata($userdata);
 		
@@ -87,22 +89,24 @@ class Authenticate extends CI_Controller {
 		// insert masyarakat
 		if($this->masyarakat_model->get_by_id($this->input->post('nik'))->num_rows()<1){
 			$masyarakatdata = [
+				'nik'=>$this->input->post('nik'),
+				'no_kk'=>$this->input->post('no_kk'),
 				'nama'=>$this->input->post('nama'),
-				'dusun'=>$this->input->post('dusun'),
-				'rt'=>$this->input->post('rt'),
-				'rw'=>$this->input->post('rw'),
-				'desa'=>$this->input->post('desa'),
-				'kecamatan'=>$this->input->post('kecamatan'),
-				'kabupaten'=>$this->input->post('kabupaten'),
+				'dusun'=>' ',
+				'rt'=>' ',
+				'rw'=>' ',
+				'desa'=>' ',
+				'kecamatan'=>' ',
+				'kabupaten'=>' ',
 				'tempat_lahir'=>$this->input->post('tempat_lahir'),
 				'tanggal_lahir'=>$this->input->post('tanggal_lahir'),
 				'jenis_kelamin'=>$this->input->post('jenis_kelamin'),
-				'agama'=>$this->input->post('agama'),
-				'status_perkawinan'=>$this->input->post('status_perkawinan'),
-				'pekerjaan'=>$this->input->post('pekerjaan'),
-				'gol_darah'=>$this->input->post('gol_darah'),
 			];
 			$this->masyarakat_model->insert($masyarakatdata);
+		}
+		
+		if($this->db->where('no_kk', $this->input->post('no_kk'))->get('kartu_keluarga')->num_rows()<1){
+			$res = $this->db->insert('kartu_keluarga', ['no_kk'=>$this->input->post('no_kk')]);
 		}
 		$this->session->set_flashdata('success', 'Registrasi berhasil silahkan login');
 		return redirect('login');

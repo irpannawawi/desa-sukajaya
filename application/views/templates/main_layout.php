@@ -77,6 +77,8 @@
 <script src="<?=base_url('assets/AdminLTE/')?>plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
 <!-- AdminLTE App -->
 <script src="<?=base_url('assets/AdminLTE/')?>dist/js/adminlte.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 <script>
   $('.datatable').dataTable()
 </script>

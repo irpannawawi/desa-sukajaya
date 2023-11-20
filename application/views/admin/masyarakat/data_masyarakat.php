@@ -34,6 +34,7 @@
                                     <th>No</th>
                                     <th>Nama</th>
                                     <th>NIK</th>
+                                    <th>KK</th>
                                     <th>Alamat</th>
                                     <th>Tempat/Tgl. Lahir</th>
                                     <th>Jenis Kelamin</th>
@@ -51,6 +52,7 @@
                                         </td>
                                         <td><?= $warga->nama ?></td>
                                         <td><?= $warga->nik ?></td>
+                                        <td><?= $warga->no_kk ?></td>
                                         <td>
                                             Dsn. <?=$warga->dusun?> RT. <?=$warga->rt?> RW. <?=$warga->rw?> 
                                         </td>
@@ -107,6 +109,10 @@
                         <div class="form-group">
                             <label for="nik">N I K <sup class="text-danger">*</sup></label>
                             <input type="text" class="form-control" name="nik" id="nik" autocomplete="off" maxlength="16" minlength="16" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="no_kk">No KK <sup class="text-danger">*</sup></label>
+                            <input type="text" class="form-control" name="no_kk" id="no_kk" autocomplete="off" maxlength="16" minlength="16" required>
                         </div>
                         <div class="form-group">
                             <label for="tempat_lahir">Tempat Lahir <sup class="text-danger">*</sup></label>

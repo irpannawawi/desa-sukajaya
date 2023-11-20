@@ -18,23 +18,23 @@
                 <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
                 <li class="nav-item ">
-                    <a href="#" class="nav-link active">
+                    <a href="<?=site_url($_SESSION['role'])?>" class="nav-link active">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>
                             Dashboard
                         </p>
                     </a>
                 </li>
-                <?php if($_SESSION['role'] == 'admin'): ?> 
                 <li class="nav-header">Master Data</li>
                 <li class="nav-item">
                     <a href="<?=site_url($_SESSION['role'].'/masyarakat')?>" class="nav-link">
                         <i class="nav-icon fas fa-users"></i>
                         <p>
-                            Data Warga
+                            Data <?=$_SESSION['role']=='admin'?'Warga':'Keluarga'?>
                         </p>
                     </a>
                 </li>
+                <?php if($_SESSION['role'] == 'admin'): ?> 
                 <li class="nav-item">
                     <a href="<?=site_url($_SESSION['role'].'/admin')?>" class="nav-link">
                         <i class="nav-icon fas fa-user"></i>
