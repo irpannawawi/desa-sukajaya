@@ -1,4 +1,5 @@
 <?php
+
 /**
  * CodeIgniter
  *
@@ -50,7 +51,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * @author		EllisLab Dev Team
  * @link		https://codeigniter.com/userguide3/general/controllers.html
  */
-class CI_Controller {
+
+ #[\AllowDynamicProperties]
+  class CI_Controller {
 
 	/**
 	 * Reference to the CI singleton
@@ -65,7 +68,15 @@ class CI_Controller {
 	 * @var	CI_Loader
 	 */
 	public $load;
-
+	public $log;
+	public $benchmark;
+	public $hooks;
+	public $config;
+	public $utf8;
+	public $uri;
+	public $router;
+	public $output;
+	public $security;
 	/**
 	 * Class constructor
 	 *
