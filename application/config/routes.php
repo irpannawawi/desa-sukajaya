@@ -54,6 +54,13 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 $route['informasi'] = 'home/information';
+// public surat domisili
+$route['public/surat_domisili'] = 'public/domisili_controller/index';
+$route['public/add_surat_domisili'] = 'public/domisili_controller/store';
+
+// keterangan usaha
+$route['public/surat_keterangan_usaha'] = 'public/keterangan_usaha_controller/index';
+$route['public/add_surat_keterangan_usaha'] = 'public/keterangan_usaha_controller/store';
 
 // AUTHENTICATING
 $route['login'] = 'authenticate/login';

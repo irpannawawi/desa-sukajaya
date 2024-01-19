@@ -17,6 +17,7 @@
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                 <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
+               <?php if(!empty($_SESSION['role'])): ?>
                 <li class="nav-item ">
                     <a href="<?=site_url($_SESSION['role'])?>" class="nav-link active">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
@@ -54,16 +55,16 @@
                         </p>
                     </a>
                 </li>
-                
+                <?php endif; // end if isset role ?>
                 <li class="nav-item">
-                    <a href="<?=site_url($_SESSION['role'].'/surat_domisili')?>" class="nav-link">
+                    <a href="<?=empty($_SESSION['role'])?site_url('public/surat_domisili'):site_url($_SESSION['role'].'/surat_domisili')?>" class="nav-link">
                         <i class="nav-icon fas fa-map"></i>
                         <p>
                             Domisili
                         </p>
                     </a>
                 </li>
-                
+                <?php if(!empty($_SESSION['role'])): ?>
                 <li class="nav-item">
                     <a href="<?=site_url($_SESSION['role'].'/surat_kelakuan_baik')?>" class="nav-link">
                         <i class="nav-icon fas fa-hands"></i>
@@ -72,15 +73,17 @@
                         </p>
                     </a>
                 </li>
-                
+                <?php endif; // end if isset role ?>
                 <li class="nav-item">
-                    <a href="<?=site_url($_SESSION['role'].'/surat_keterangan_usaha')?>" class="nav-link">
+                    <a href="<?=empty($_SESSION['role'])?site_url('public/surat_keterangan_usaha'):site_url($_SESSION['role'].'/surat_keterangan_usaha')?>" class="nav-link">
                         <i class="nav-icon fas fa-shopping-cart"></i>
                         <p>
                             Usaha
                         </p>
                     </a>
                 </li>
+                <?php if(!empty($_SESSION['role'])): ?>
+                
 
                 
                 
@@ -92,6 +95,7 @@
                         </p>
                     </a>
                 </li>
+                <?php endif; // end if isset role ?>
                 
             </ul>
         </nav>

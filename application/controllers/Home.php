@@ -24,11 +24,15 @@ class Home extends CI_Controller
         if(isset($_GET['keyword']))
         {
             $data['search_result'] = [
-                'masyarakat'=> $this->db->select('*')->like('nama', '%'.$_GET['keyword'].'%')->get('masyarakat')->result(),
+                'masyarakat'=> $this->db
+                ->select('*')
+                ->like('nama', '%'.$_GET['keyword'].'%')
+                ->or_where('nik', $_GET['keyword'])
+                ->or_where('no_kk', $_GET['keyword'])
+                ->get('masyarakat')->result(),
             ];
         }
-        // var_dump($this->db->last_query());
-        // var_dump($data['search_result']['masyarakat']);die;
+       
         $data['jumlah_pengguna'] = $this->masyarakat_model->get_all()->num_rows();
 		$data['jumlah_kematian'] = $this->kematian_model->get_all()->num_rows();
 		$data['jumlah_kelakuan_baik'] = $this->kelakuan_baik_model->get_all()->num_rows();

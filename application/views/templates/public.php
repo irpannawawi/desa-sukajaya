@@ -26,9 +26,9 @@
 
     <!-- Template Main CSS File -->
     <link href="<?= base_url('assets/theme/Arsha/') ?>assets/css/style.css" rel="stylesheet">
-<!-- Font Awesome 4 CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Font Awesome 4 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <!-- =======================================================
   * Template Name: Arsha
@@ -53,6 +53,12 @@
                 <ul>
                     <li><a class="nav-link scrollto active" href="<?= site_url('/') ?>">Home</a></li>
                     <li><a class="nav-link scrollto" href="<?= site_url('informasi') ?>">Informasi</a></li>
+                    <li class="dropdown"><a href="#"><span>Layanan</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="<?=site_url('public/surat_domisili')?>">Surat Keterangan Domisili</a></li>
+                            <li><a href="<?=site_url('public/surat_keterangan_usaha')?>">Surat Keterangan Usaha</a></li>
+                        </ul>
+                    </li>
                     <li><a class="getstarted scrollto" href="<?= site_url('login') ?>">Masuk</a></li>
                     <li><a class="nav-link scrollto" href="<?= site_url('register') ?>">Daftar</a></li>
                 </ul>
@@ -107,11 +113,20 @@
                     <div class="col-lg-3 col-md-6 footer-links">
                         <h4>Link Berguna</h4>
                         <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Beranda</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Tentang Kami</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Layanan</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Syarat Layanan</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Kebijakan Privasi</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="<?= site_url('/') ?>">Beranda</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="<?= site_url('informasi') ?>">Informasi</a></li>
+                            <li class="dropdown">
+                                <i class="bx bx-chevron-right"></i>
+                                <a href="#" class="" data-bs-toggle="dropdown">Layanan Masyarakat</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="<?= site_url('public/surat_domisili') ?>">
+                                        <i class="bx bx-chevron-right"></i>
+                                        Surat Keterangan Domisili</a>
+                                    <a class="dropdown-item" href="<?= site_url('public/surat_keterangan_usaha') ?>">
+                                        <i class="bx bx-chevron-right"></i>
+                                        Surat Keterangan Usaha</a>
+                                </div>
+                            </li>
                         </ul>
                     </div>
 

@@ -2,7 +2,7 @@
   <!-- /.login-logo -->
   <div class="card card-outline card-primary">
     <div class="card-header text-center">
-      <a href="<?= site_url('login') ?>" class="h1"><b>SIP</b>Masyarakat</a>
+      <a href="<?= site_url('/') ?>" class="h1"><b>SIP</b>Masyarakat</a>
     </div>
     <div class="card-body">
       <p class="login-box-msg">Silahkan login untuk menggunakan aplikasi</p>

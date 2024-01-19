@@ -5,6 +5,7 @@ class Domisili_model extends CI_Model {
 
     public function get_all(){
         $this->db->select('masyarakat.*, suket_domisili.*');
+        $this->db->order_by('id_surat', 'DESC');
         $this->db->join('masyarakat', 'masyarakat.nik=suket_domisili.nik_pemohon');
         return $this->db->get('suket_domisili');
     }

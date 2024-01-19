@@ -1,3 +1,81 @@
+<!--search start -->
+<section id="contact" class="contact mt-5" style="padding:0px;">
+
+    <div class="container">
+        <div class="contact-content">
+            <h1>Cari Informasi Penduduk</h1>
+            <div class="row">
+                <div class="">
+                    <div class="single-contact-box" style="padding-top: 15px;">
+                        <div class="contact-form">
+                            <form method="GET" action="<?= site_url('informasi') ?>">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <input type="search" 
+                                            name="keyword" 
+                                            class="form-control" 
+                                            id="search" 
+                                            placeholder="Masukan Nama Lengkap / NIK / No. KK" <?=isset($_GET['keyword'])?'autofocus':''?> />
+                                        </div><!--/.form-group-->
+                                    </div><!--/.col-->
+                                </div><!--/.row-->
+                                <div class="row mt-2">
+                                    <div class="col-sm-12">
+                                        <div class="single-contact-btn">
+                                            <button type="submit" class="btn btn-primary">Cari</button>
+                                            <a href="<?= site_url('informasi') ?>" class="btn btn-secondary">Reset</a>
+                                        </div><!--/.single-single-contact-btn-->
+                                    </div><!--/.col-->
+                                </div><!--/.row-->
+                            </form><!--/form-->
+                        </div><!--/.contact-form-->
+                    </div><!--/.single-contact-box-->
+                </div><!--/.col-->
+            </div><!--/.row-->
+        </div><!--/.contact-content-->
+    </div><!--/.container-->
+</section><!--/.search-->
+<!--search end -->
+
+<?php if (!empty($search_result)) { ?>
+    <!--about start -->
+    <section id="about" class="about" style="padding: 20px 0px 10px;">
+        <div class="text-center" style="padding-bottom:0px">
+            <h2>Hasil</h2>
+        </div>
+        <div class="container">
+            <div class="mt-3 p-2" style="margin-top: 10px;">
+                <div class="row">
+                    <div class="col-12">
+                        <table class="table">
+                            <tr>
+                                <th>No</th>
+                                <th>Nama</th>
+                                <th>Jenis Kelamin</th>
+                                <th>Alamat</th>
+                            </tr>
+                            <?php $n = 0;
+                            foreach ($search_result['masyarakat'] as $masyarakat) { ?>
+                                <tr>
+                                    <td><?= ++$n ?></td>
+                                    <td><?= $masyarakat->nama ?></td>
+                                    <td><?= $masyarakat->jenis_kelamin ?></td>
+                                    <td>Dusun <?= $masyarakat->dusun ?> RT. <?= $masyarakat->rt ?> RW. <?= $masyarakat->rw ?> Desa <?= $masyarakat->desa ?> Kecamatan <?= $masyarakat->kecamatan ?> Kabupaten <?= $masyarakat->kabupaten ?></td>
+                                </tr>
+                            <?php } //endforeach 
+                            ?>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!--/.about-->
+    <!--about end -->
+<?php } // endif 
+?>
+
+
 <!--profiles start -->
 <section id="profiles" class="profiles" style="padding-bottom: 10px;">
     <div class="section-heading text-center">
@@ -46,77 +124,7 @@
     </div>
 </section>
 
-<!--contact start -->
-<section id="contact" class="contact" style="padding:0px;">
 
-    <div class="container">
-        <div class="contact-content">
-            <h1>Cari</h1>
-            <div class="row">
-                <div class="">
-                    <div class="single-contact-box" style="padding-top: 15px;">
-                        <div class="contact-form">
-                            <form method="GET" action="<?= site_url('informasi') ?>">
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <div class="form-group">
-                                            <input type="search" name="keyword" class="form-control" id="search" placeholder="Cari data masyarakat">
-                                        </div><!--/.form-group-->
-                                    </div><!--/.col-->
-                                </div><!--/.row-->
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <div class="single-contact-btn">
-                                            <button type="submit" class="btn btn-primary">Cari</button>
-                                        </div><!--/.single-single-contact-btn-->
-                                    </div><!--/.col-->
-                                </div><!--/.row-->
-                            </form><!--/form-->
-                        </div><!--/.contact-form-->
-                    </div><!--/.single-contact-box-->
-                </div><!--/.col-->
-            </div><!--/.row-->
-        </div><!--/.contact-content-->
-    </div><!--/.container-->
-</section><!--/.contact-->
-<!--contact end -->
-
-<?php if (!empty($search_result)) { ?>
-    <!--about start -->
-    <section id="about" class="about" style="padding: 20px 0px 10px;">
-        <div class="text-center" style="padding-bottom:0px">
-            <h2>Hasil</h2>
-        </div>
-        <div class="container">
-            <div class="mt-3 p-2" style="margin-top: 10px;">
-                <div class="row">
-                    <div class="col-12">
-                        <table class="table">
-                            <tr>
-                                <th>No</th>
-                                <th>Nama</th>
-                                <th>Jenis Kelamin</th>
-                                <th>Alamat</th>
-                            </tr>
-                            <?php $n = 0;
-                            foreach ($search_result['masyarakat'] as $masyarakat) { ?>
-                                <tr>
-                                    <td><?= ++$n ?></td>
-                                    <td><?= $masyarakat->nama ?></td>
-                                    <td><?= $masyarakat->jenis_kelamin ?></td>
-                                    <td>Dusun <?= $masyarakat->dusun ?> RT. <?= $masyarakat->rt ?> RW. <?= $masyarakat->rw ?> Desa <?= $masyarakat->desa ?> Kecamatan <?= $masyarakat->kecamatan ?> Kabupaten <?= $masyarakat->kabupaten ?></td>
-                                </tr>
-                            <?php } //endforeach 
-                            ?>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section><!--/.about-->
-    <!--about end -->
-<?php } // endif 
-?>
 
 <script>
     // Data jumlah surat (contoh)
