@@ -27,12 +27,14 @@ class Authenticate extends CI_Controller {
 
 	public function act_login()
 	{
-		$email = $this->input->post('email');
+		$email = $this->input->post('nik');
 		$password = $this->input->post('password');
 
 		// get userdata
 		$user = $this->users_model->get_by_email($email);
-
+		if($user->num_rows()<1){
+			$user = $this->users_model->get_by_nik($email);
+		}
 		if($user->num_rows()<1){
 			$this->session->set_flashdata('error', 'Email tidak ditemukan');
 			return redirect('login');

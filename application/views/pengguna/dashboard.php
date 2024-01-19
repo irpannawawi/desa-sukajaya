@@ -21,7 +21,7 @@
     <div class="container-fluid">
         <div class="row">
 
-        <div class="col-3">
+        <div class="col-md-3">
                 <div class="info-box">
                     <span class="info-box-icon bg-info"><i class="far fa-envelope"></i></span>
                     <div class="info-box-content">
@@ -30,7 +30,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-md-3">
                 <div class="info-box">
                     <span class="info-box-icon bg-info"><i class="far fa-envelope"></i></span>
                     <div class="info-box-content">
@@ -39,7 +39,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-md-3">
                 <div class="info-box">
                     <span class="info-box-icon bg-info"><i class="far fa-envelope"></i></span>
                     <div class="info-box-content">

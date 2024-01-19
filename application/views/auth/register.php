@@ -4,20 +4,12 @@
 
         <form action="<?=site_url('register_member')?>" method="post">
             <div class="row">
-                <div class="col-6">
+                <div class="col-md-6">
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Username" name="username">
+                        <input type="text" class="form-control" placeholder="Username" name="username" autocomplete="off">
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <span class="fas fa-user"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="input-group mb-3">
-                        <input type="email" class="form-control" placeholder="Email" name="email">
-                        <div class="input-group-append">
-                            <div class="input-group-text">
-                                <span class="fas fa-envelope"></span>
                             </div>
                         </div>
                     </div>
@@ -44,7 +36,7 @@
                 </div>
                 <div class="col">
                 <div class="input-group mb-3">
-                        <input type="text" class="form-control" onkeyup="check_nik()" placeholder="NIK" name="nik" id="nik">
+                        <input type="text" class="form-control" maxlength="16" minlength="16" onkeyup="check_nik()" placeholder="NIK" name="nik" id="nik">
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <span class="fas fa-id-card"></span>
@@ -54,7 +46,7 @@
 
                     
                 <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="NO KK" name="no_kk" id="no_kk">
+                        <input type="text" class="form-control" maxlength="16" minlength="16" placeholder="NO KK" name="no_kk" id="no_kk">
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <span class="fas fa-users"></span>

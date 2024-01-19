@@ -14,7 +14,13 @@ class Users_model extends CI_Model {
     public function get_by_email($email){
         $this->db->where('email', $email);
         return $this->db->get('users');
+    }    
+    
+    public function get_by_nik($nik){
+        $this->db->where('nik', $nik);
+        return $this->db->get('users');
     }
+    
     public function get_where($condition){
         $this->db->where($condition);
         return $this->db->get('users');

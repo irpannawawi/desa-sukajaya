@@ -16,10 +16,10 @@
       <?php endif ?>
       <form action="<?= site_url('act_login') ?>" method="post">
         <div class="input-group mb-3">
-          <input type="email" name="email" class="form-control" placeholder="Email">
+          <input type="text" name="nik" class="form-control" placeholder="NIK">
           <div class="input-group-append">
             <div class="input-group-text">
-              <span class="fas fa-envelope"></span>
+              <span class="fas fa-user"></span>
             </div>
           </div>
         </div>

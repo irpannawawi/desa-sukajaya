@@ -6,7 +6,11 @@
             <div class="image">
 
             </div>
-            <a href="#" style="text-align: center" class="text-center">SISTEM INFORMASI <br>PELAYANAN MASYARAKAT</a>
+            <a href="#" style="text-align: center" class="text-center">SISTEM INFORMASI <br>PELAYANAN MASYARAKAT 
+        <?php
+        $curr_page = $this->uri->segment(2);
+        ?> 
+        </a>
             
         </div>
 
@@ -19,7 +23,7 @@
                with font-awesome or any other icon font library -->
                <?php if(!empty($_SESSION['role'])): ?>
                 <li class="nav-item ">
-                    <a href="<?=site_url($_SESSION['role'])?>" class="nav-link active">
+                    <a href="<?=site_url($_SESSION['role'])?>" class="nav-link <?=$curr_page==''?'active':''?>">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>
                             Dashboard
@@ -28,7 +32,7 @@
                 </li>
                 <li class="nav-header">Master Data</li>
                 <li class="nav-item">
-                    <a href="<?=site_url($_SESSION['role'].'/masyarakat')?>" class="nav-link">
+                    <a href="<?=site_url($_SESSION['role'].'/masyarakat')?>" class="nav-link <?=$curr_page=='masyarakat'?'active':''?>">
                         <i class="nav-icon fas fa-users"></i>
                         <p>
                             Data <?=$_SESSION['role']=='admin'?'Warga':'Keluarga'?>
@@ -37,7 +41,7 @@
                 </li>
                 <?php if($_SESSION['role'] == 'admin'): ?> 
                 <li class="nav-item">
-                    <a href="<?=site_url($_SESSION['role'].'/admin')?>" class="nav-link">
+                    <a href="<?=site_url($_SESSION['role'].'/admin')?>" class="nav-link <?=$curr_page=='admin'?'active':''?>">
                         <i class="nav-icon fas fa-user"></i>
                         <p>
                             Data Admin
@@ -48,7 +52,7 @@
                 <li class="nav-header">Surat-surat keterangan</li>
 
                 <li class="nav-item">
-                    <a href="<?=site_url($_SESSION['role'].'/surat_kematian')?>" class="nav-link">
+                    <a href="<?=site_url($_SESSION['role'].'/surat_kematian')?>" class="nav-link <?=$curr_page=='surat_kematian'?'active':''?>">
                         <i class="nav-icon fa fa-heartbeat"></i>
                         <p>
                             Kematian
@@ -57,7 +61,7 @@
                 </li>
                 <?php endif; // end if isset role ?>
                 <li class="nav-item">
-                    <a href="<?=empty($_SESSION['role'])?site_url('public/surat_domisili'):site_url($_SESSION['role'].'/surat_domisili')?>" class="nav-link">
+                    <a href="<?=empty($_SESSION['role'])?site_url('public/surat_domisili'):site_url($_SESSION['role'].'/surat_domisili')?>" class="nav-link <?=$curr_page=='surat_domisili'?'active':''?>">
                         <i class="nav-icon fas fa-map"></i>
                         <p>
                             Domisili
@@ -66,7 +70,7 @@
                 </li>
                 <?php if(!empty($_SESSION['role'])): ?>
                 <li class="nav-item">
-                    <a href="<?=site_url($_SESSION['role'].'/surat_kelakuan_baik')?>" class="nav-link">
+                    <a href="<?=site_url($_SESSION['role'].'/surat_kelakuan_baik')?>" class="nav-link <?=$curr_page=='surat_kelakuan_baik'?'active':''?>">
                         <i class="nav-icon fas fa-hands"></i>
                         <p>
                             Kelakuan Baik
@@ -75,7 +79,7 @@
                 </li>
                 <?php endif; // end if isset role ?>
                 <li class="nav-item">
-                    <a href="<?=empty($_SESSION['role'])?site_url('public/surat_keterangan_usaha'):site_url($_SESSION['role'].'/surat_keterangan_usaha')?>" class="nav-link">
+                    <a href="<?=empty($_SESSION['role'])?site_url('public/surat_keterangan_usaha'):site_url($_SESSION['role'].'/surat_keterangan_usaha')?>" class="nav-link <?=$curr_page=='surat_keterangan_usaha'?'active':''?>">
                         <i class="nav-icon fas fa-shopping-cart"></i>
                         <p>
                             Usaha

@@ -8,7 +8,7 @@
             <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item active">Warga</li>
+                    <li class="breadcrumb-item active">Keluarga</li>
                 </ol>
             </div><!-- /.col -->
         </div><!-- /.row -->
@@ -21,14 +21,12 @@
     <div class="container-fluid">
         <div class="card">
             <div class="card-header">
-                <h3 class="h3 float-left">Data Warga</h3>
-                <button class="btn btn-sm btn-primary float-right" data-toggle="modal" data-target="#tambahModal">Tambah
-                    data</button>
+                <h3 class="h3 float-left">Data Keluarga</h3>
             </div>
             <div class="card-body">
                 <div class="row">
                     <div class="col table-responsive">
-                        <table class="datatable table table-striped table-sm text-center table-borderd">
+                        <table class="table table-striped table-sm text-center table-borderd">
                             <thead>
                                 <tr>
                                     <th>No</th>

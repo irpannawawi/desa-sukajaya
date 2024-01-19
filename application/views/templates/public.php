@@ -105,8 +105,7 @@
                         <p>
                             Kabupaten Ciamis, Jawa Barat<br>
                             Indonesia <br><br>
-                            <strong>Phone:</strong> [Nomor Telepon Desa Anda]<br>
-                            <strong>Email:</strong> info@desasukajaya.com<br>
+                            <strong> Phone:</strong> <a href="https://wa.me/6282219309889"><i class="fa fa-whatsapp"></i> 0822-1930-9889</a><br>
                         </p>
                     </div>
 
@@ -129,18 +128,6 @@
                             </li>
                         </ul>
                     </div>
-
-                    <div class="col-lg-3 col-md-6 footer-links">
-                        <h4>Jaringan Sosial Kami</h4>
-                        <p>Ikuti kami di media sosial untuk mendapatkan informasi terbaru.</p>
-                        <div class="social-links mt-3">
-                            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                            <!-- Ganti dengan link media sosial Desa Sukajaya yang sesuai -->
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </div>
