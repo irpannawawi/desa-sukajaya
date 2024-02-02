@@ -69,7 +69,7 @@
     </header><!-- End Header -->
 
     <!-- ======= Hero Section ======= -->
-    <section id="hero" class="d-flex align-items-center">
+    <section id="hero" class="d-flex align-items-center" style="height: 97vh;">
 
         <div class="container">
             <div class="row">
@@ -80,7 +80,7 @@
 
                 </div>
                 <div class="col-lg-6 order-1 order-lg-2 hero-img aos-init aos-animate" data-aos="zoom-in" data-aos-delay="200">
-                    <img src="<?= base_url('assets/theme/Arsha/') ?>assets/img/hero-img.png" class="img-fluid animated" alt="">
+                    <img src="<?= base_url('assets/theme/Arsha/') ?>assets/img/hero-img.png" class="img-fluid mt-3 shadow" style="border: 10px solid white; border-radius: 10px" alt="">
                 </div>
             </div>
         </div>
