@@ -24,6 +24,7 @@ class Keterangan_usaha_controller extends CI_Controller {
         $keterangan_usaha_data = [
             'nik_pemohon'=>$this->input->post('nik_pemohon'),
             'nama_usaha'=>$this->input->post('nama_usaha'),
+            'alamat_usaha'=>$this->input->post('alamat_usaha'),
         ];
 
         $res = $this->keterangan_usaha_model->insert($keterangan_usaha_data);
@@ -46,6 +47,7 @@ class Keterangan_usaha_controller extends CI_Controller {
         $keterangan_usaha_data = [
             'nik_pemohon'=>$this->input->post('nik_pemohon'),
             'nama_usaha'=>$this->input->post('nama_usaha'),
+            'alamat_usaha'=>$this->input->post('alamat_usaha'),
         ];
 
 

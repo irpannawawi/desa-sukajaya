@@ -52,6 +52,7 @@ class Domisili_controller extends CI_Controller
             'nik_termohon' => $this->input->post('nik_termohon'),
             'alamat_lembaga' => $this->input->post('alamat_lembaga'),
             'nama_lembaga' => $this->input->post('nama_lembaga'),
+            'alamat_asal' => $this->input->post('alamat_asal'),
         ];
 
         $res = $this->domisili_model->insert($domisili_data);

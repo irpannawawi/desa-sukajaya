@@ -39,6 +39,7 @@
                                     <th>Tempat Meninggal</th>
                                     <th>Sebab</th>
                                     <th>Tanggal Permohonan</th>
+                                    <th>Status</th>
                                     <th>Aksi</th>
                                 </tr>
                             </thead>
@@ -75,22 +76,17 @@
                                     <td>
                                         <?= $surat->created_at ?>
                                     </td>
-
+                                    <td>
+                                            <span class="badge badge-<?= bg_color($surat->status) ?>"><?= ucfirst($surat->status) ?></span>
+                                        </td>
                                     <td>
                                         <div class="btn-group">
-                                            <a class="btn btn-sm btn-info text-white"
-                                                href="<?= site_url('download/surat_kematian/'.$surat->id_surat) ?>">
-                                                <i class="fa fa-download"></i>
-                                            </a>
+                                            <?php if($surat->status=='proses'): ?>
                                             <a class="btn btn-sm btn-warning text-white"
                                                 href="<?= site_url('pengguna/surat_kematian/'.$surat->id_surat) ?>">
                                                 <i class="fa fa-edit"></i>
                                             </a>
-                                            <a class="btn btn-sm btn-danger"
-                                                href="<?= site_url('pengguna/surat_kematian/delete/' . $surat->id_surat) ?>"
-                                                onclick="return confirm('Hapus data?')">
-                                                <i class="fa fa-trash"></i>
-                                            </a>
+                                            <?php endif ?>
                                         </div>
                                     </td>
                                 </tr>

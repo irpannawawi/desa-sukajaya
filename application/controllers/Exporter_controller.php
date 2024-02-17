@@ -160,6 +160,7 @@ class Exporter_controller extends CI_Controller
             $bulan = $this->ubah_nama_bulan(date('m'));
             $templateProcessor->setValue('bln', $bulan);
             $templateProcessor->setValue('thn', date('Y'));
+            $templateProcessor->setValue('alamat_asal', $surat->alamat_asal);
         }else{
             $nama_template = 'domisili_lembaga';
             $templateProcessor = new \PhpOffice\PhpWord\TemplateProcessor('assets/template/'.$nama_template.'.docx');
@@ -200,6 +201,7 @@ class Exporter_controller extends CI_Controller
         $templateProcessor->setValue('tanggal_lahir', $surat->tanggal_lahir);
         $templateProcessor->setValue('pekerjaan', $surat->pekerjaan);
         $templateProcessor->setValue('status_perkawinan', $surat->status_perkawinan=='S'?'Menikah':'Belum menikah');
+        $templateProcessor->setValue('tujuan', $surat->tujuan);
         $dusun = ucfirst(strtolower(trim($surat->dusun)));
         $templateProcessor->setValue('dusun', $dusun);
         $templateProcessor->setValue('rt', $surat->rt);
@@ -242,6 +244,7 @@ class Exporter_controller extends CI_Controller
         $templateProcessor->setValue('rt', $surat->rt);
         $templateProcessor->setValue('rw', $surat->rw);
         $templateProcessor->setValue('nama_usaha', $surat->nama_usaha);
+        $templateProcessor->setValue('alamat_usaha', $surat->alamat_usaha);
 
         $templateProcessor->setValue('tgl', date('d'));
         $bulan = $this->ubah_nama_bulan(date('m'));

@@ -98,6 +98,8 @@ $route['admin/add_surat_kematian'] = 'admin/kematian_controller/store';
 $route['admin/surat_kematian/(:num)'] = 'admin/kematian_controller/edit/$1';
 $route['admin/surat_kematian/edit'] = 'admin/kematian_controller/update';
 $route['admin/surat_kematian/delete/(:num)'] = 'admin/kematian_controller/delete/$1';
+$route['admin/surat_kematian/status/terima/(:num)'] = 'admin/kematian_controller/terima/$1';
+$route['admin/surat_kematian/status/tolak/(:num)'] = 'admin/kematian_controller/tolak/$1';
 
 // domisili
 $route['admin/surat_domisili'] = 'admin/domisili_controller/index';
@@ -105,6 +107,8 @@ $route['admin/add_surat_domisili'] = 'admin/domisili_controller/store';
 $route['admin/surat_domisili/(:num)'] = 'admin/domisili_controller/edit/$1';
 $route['admin/surat_domisili/edit'] = 'admin/domisili_controller/update';
 $route['admin/surat_domisili/delete/(:num)'] = 'admin/domisili_controller/delete/$1';
+$route['admin/surat_domisili/status/terima/(:num)'] = 'admin/domisili_controller/terima/$1';
+$route['admin/surat_domisili/status/tolak/(:num)'] = 'admin/domisili_controller/tolak/$1';
 
 
 // kelakuan baik
@@ -113,7 +117,8 @@ $route['admin/add_surat_kelakuan_baik'] = 'admin/kelakuan_baik_controller/store'
 $route['admin/surat_kelakuan_baik/(:num)'] = 'admin/kelakuan_baik_controller/edit/$1';
 $route['admin/surat_kelakuan_baik/edit'] = 'admin/kelakuan_baik_controller/update';
 $route['admin/surat_kelakuan_baik/delete/(:num)'] = 'admin/kelakuan_baik_controller/delete/$1';
-
+$route['admin/surat_kelakuan_baik/status/terima/(:num)'] = 'admin/kelakuan_baik_controller/terima/$1';
+$route['admin/surat_kelakuan_baik/status/tolak/(:num)'] = 'admin/kelakuan_baik_controller/tolak/$1';
 
 // keterangan usaha
 $route['admin/surat_keterangan_usaha'] = 'admin/keterangan_usaha_controller/index';
@@ -121,12 +126,15 @@ $route['admin/add_surat_keterangan_usaha'] = 'admin/keterangan_usaha_controller/
 $route['admin/surat_keterangan_usaha/(:num)'] = 'admin/keterangan_usaha_controller/edit/$1';
 $route['admin/surat_keterangan_usaha/edit'] = 'admin/keterangan_usaha_controller/update';
 $route['admin/surat_keterangan_usaha/delete/(:num)'] = 'admin/keterangan_usaha_controller/delete/$1';
+$route['admin/surat_keterangan_usaha/status/terima/(:num)'] = 'admin/keterangan_usaha_controller/terima/$1';
+$route['admin/surat_keterangan_usaha/status/tolak/(:num)'] = 'admin/keterangan_usaha_controller/tolak/$1';
 
 // EXPORT / DOWNLOAD SURAT
 $route['download/surat_kematian/(:num)'] = 'Exporter_controller/surat_kematian/$1';
 $route['download/surat_domisili/(:num)'] = 'Exporter_controller/surat_domisili/$1';
 $route['download/surat_kelakuan_baik/(:num)'] = 'Exporter_controller/surat_kelakuan_baik/$1';
 $route['download/surat_keterangan_usaha/(:num)'] = 'Exporter_controller/surat_keterangan_usaha/$1';
+
 
 // PENGGUNA
 $route['pengguna'] = 'pengguna/dashboard/index';

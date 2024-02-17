@@ -55,6 +55,10 @@
                     <label for="nama_usaha">Nama Usaha</label>
                     <input type="text" class="form-control" value="<?=$surat->nama_usaha?>" name="nama_usaha" required>
                 </div>
+                <div class="form-group">
+                    <label for="alamat_usaha">Alamat Usaha</label>
+                    <input type="text" class="form-control" value="<?=$surat->alamat_usaha?>" name="alamat_usaha" required>
+                </div>
                 <hr>
                 
                 <div class="form-group">

@@ -41,4 +41,11 @@ class Keterangan_usaha_model extends CI_Model {
         return $this->db->delete('suket_usaha');
     }
 
+    public function status($status, $id)
+    {
+        
+        $this->db->where('id_surat', $id);
+        $this->db->set('status', $status);
+        return $this->db->update('suket_usaha');
+    }
 }

@@ -72,6 +72,12 @@
                     </div>
                 </div>
                 <button type="button" onclick="check_nik()" class="btn btn-sm mt-2 btn-info">Check!</button>
+                
+                <hr>
+                <div class="form-group">
+                    <label for="alamat_asal">Alamat Asal</label>
+                    <textarea name="alamat_asal" id="" cols="30" rows="10" class="form-control" required><?=$surat->alamat_asal?></textarea>
+                </div>
                 <hr>
                 <div class="form-group">
                     <label for="tujuan">Tujuan / Peruntukan</label>

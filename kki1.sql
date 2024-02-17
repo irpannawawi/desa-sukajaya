@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jan 19, 2024 at 03:53 PM
+-- Generation Time: Feb 17, 2024 at 04:56 PM
 -- Server version: 8.0.30
--- PHP Version: 8.3.1
+-- PHP Version: 8.1.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -1702,6 +1702,7 @@ INSERT INTO `masyarakat` (`nik`, `no_kk`, `nama`, `dusun`, `rt`, `rw`, `desa`, `
 ('3207114910950001', 3207131605170001, 'EPA PATMASARI', 'DUSUN CITAPEN PASIR', '10', '2', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '09-10-1995', 'Perempuan', 'Islam', 'Kawin', 'MENGURUS RUMAH TANGGA', '-'),
 ('3207124211970001', 3207132608090002, 'MAMAY MAESAROH', 'DUSUN CITAPENPASIR', '3', '1', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '02-11-1997', 'Perempuan', 'Islam', 'Kawin', 'MENGURUS RUMAH TANGGA', '-'),
 ('3207124303120001', 3207132909150001, 'NURUL PAJRIAH', 'DUSUN JAMURESI', '9', '8', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '03-03-2012', 'Perempuan', 'Islam', 'Belum Kawin', 'BELUM/TIDAK BEKERJA', '-'),
+('3207130000000000', 0, 'wawan', 'Pabuaran', '001', '001', 'Sukajaya', 'Rajadesa', 'Ciamis', 'Ciamis', '20 Oktober 1995', 'Laki-laki', 'Islam', 'belum', 'wiraswasta', '-'),
 ('3207130101060005', 3207130601090004, 'DIDI NURJAMAN', 'DUSUN CITAPEN LANDEUH', '10', '4', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '01-01-2006', 'Laki-laki', 'Islam', 'Belum Kawin', 'BELUM/TIDAK BEKERJA', '-'),
 ('3207130101120001', 3207130301120001, 'ZENI JANUAR AMSARI', 'DUSUN CITAPEN LANDEUH', '9', '4', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '01-01-2012', 'Laki-laki', 'Islam', 'Belum Kawin', 'BELUM/TIDAK BEKERJA', '-'),
 ('3207130101400001', 3207132009070576, 'TARCA', 'CITAPEN PASIR', '7', '2', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '01-01-1940', 'Laki-laki', 'Islam', 'Kawin', 'PERDAGANGAN', '-'),
@@ -1860,9 +1861,9 @@ INSERT INTO `masyarakat` (`nik`, `no_kk`, `nama`, `dusun`, `rt`, `rw`, `desa`, `
 ('3207130107750044', 3207131809070331, 'CECE HUSEN', 'DUSUN JAMURESI', '10', '8', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '01-07-1975', 'Laki-laki', 'Islam', 'Kawin', 'PETANI/PEKEBUN', '-'),
 ('3207130107770007', 3207131709070217, 'SARIP', 'DUSUN JAMURESI', '3', '7', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '01-07-1977', 'Laki-laki', 'Islam', 'Kawin', 'PETANI/PEKEBUN', '-'),
 ('3207130107770008', 3207131809070321, 'AHUM', 'DUSUN JAMURESI', '10', '8', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '01-07-1977', 'Laki-laki', 'Islam', 'Kawin', 'BURUH TANI/PERKEBUNAN', '-'),
-('3207130107770009', 3207131809070344, 'NADI', 'DUSUN JAMURESI', '10', '8', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '01-07-1977', 'Laki-laki', 'Islam', 'Kawin', 'PETANI/PEKEBUN', '-'),
-('3207130107780020', 3207130104090003, 'IKIN MUTAQIN', 'DUSUN JAMURESI', '6', '7', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '01-07-1978', 'Laki-laki', 'Islam', 'Kawin', 'BURUH TANI/PERKEBUNAN', '-');
+('3207130107770009', 3207131809070344, 'NADI', 'DUSUN JAMURESI', '10', '8', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '01-07-1977', 'Laki-laki', 'Islam', 'Kawin', 'PETANI/PEKEBUN', '-');
 INSERT INTO `masyarakat` (`nik`, `no_kk`, `nama`, `dusun`, `rt`, `rw`, `desa`, `kecamatan`, `kabupaten`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `agama`, `status_perkawinan`, `pekerjaan`, `gol_darah`) VALUES
+('3207130107780020', 3207130104090003, 'IKIN MUTAQIN', 'DUSUN JAMURESI', '6', '7', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '01-07-1978', 'Laki-laki', 'Islam', 'Kawin', 'BURUH TANI/PERKEBUNAN', '-'),
 ('3207130107800008', 3207131709070154, 'SULAEMAN', 'DUSUN BENTUKSARI', '3', '5', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '01-07-1980', 'Laki-laki', 'Islam', 'Kawin', 'PETANI/PEKEBUN', '-'),
 ('3207130107800017', 3207131002110025, 'MOMON', 'DUSUN BENTUKSARI', '7', '5', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '01-07-1980', 'Laki-laki', 'Islam', 'Kawin', 'BURUH HARIAN LEPAS', '-'),
 ('3207130107800021', 3207132609070018, 'KARNA', 'DUSUN CITAPEN LANDEUH', '3', '3', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '01-07-1980', 'Laki-laki', 'Islam', 'Kawin', 'BURUH TANI/PERKEBUNAN', '-'),
@@ -2109,9 +2110,9 @@ INSERT INTO `masyarakat` (`nik`, `no_kk`, `nama`, `dusun`, `rt`, `rw`, `desa`, `
 ('3207130404180001', 3207131912100004, 'REZA ACHMAD APRIANSYAH', 'CITAPEN LANDEUH', '8', '4', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '04-04-2018', 'Laki-laki', 'Islam', 'Belum Kawin', 'BELUM/TIDAK BEKERJA', '-'),
 ('3207130404550001', 3207132309070271, 'DAHLAN', 'DUSUN CITAPEN PASIR', '5', '1', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '04-04-1955', 'Laki-laki', 'Islam', 'Kawin', 'BURUH HARIAN LEPAS', '-'),
 ('3207130404840004', 3207131609070214, 'HASAN', 'DUSUN BENTUK SARI', '4', '6', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '04-04-1984', 'Laki-laki', 'Islam', 'Belum Kawin', 'PETANI/PEKEBUN', '-'),
-('3207130404890002', 3207132109120008, 'SUPRIADI', 'DUSUN CITAPEN PASIR', '8', '2', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '04-04-1989', 'Laki-laki', 'Islam', 'Kawin', 'BURUH HARIAN LEPAS', '-'),
-('3207130404910004', 3207132610070033, 'ADAM', 'DUSUN CITAPEN PASIR NO 89', '5', '1', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '04-04-1991', 'Laki-laki', 'Islam', 'Belum Kawin', 'BURUH HARIAN LEPAS', '-');
+('3207130404890002', 3207132109120008, 'SUPRIADI', 'DUSUN CITAPEN PASIR', '8', '2', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '04-04-1989', 'Laki-laki', 'Islam', 'Kawin', 'BURUH HARIAN LEPAS', '-');
 INSERT INTO `masyarakat` (`nik`, `no_kk`, `nama`, `dusun`, `rt`, `rw`, `desa`, `kecamatan`, `kabupaten`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `agama`, `status_perkawinan`, `pekerjaan`, `gol_darah`) VALUES
+('3207130404910004', 3207132610070033, 'ADAM', 'DUSUN CITAPEN PASIR NO 89', '5', '1', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '04-04-1991', 'Laki-laki', 'Islam', 'Belum Kawin', 'BURUH HARIAN LEPAS', '-'),
 ('3207130404930005', 3207132609070072, 'ROBI YULIAN', 'DUSUN CITAPEN LANDEUH', '3', '3', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '04-04-1993', 'Laki-laki', 'Islam', 'Belum Kawin', 'BELUM/TIDAK BEKERJA', '-'),
 ('3207130404940003', 3207132309070328, 'RONI PRIATNA RAMDANI', 'DUSUN CITAPEN PASIR', '4', '1', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '04-04-1994', 'Laki-laki', 'Islam', 'Belum Kawin', 'BELUM/TIDAK BEKERJA', '-'),
 ('3207130405040002', 3207131809070273, 'WAWAN', 'DUSUN JAMURESI', '5', '7', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '04-05-2004', 'Laki-laki', 'Islam', 'Belum Kawin', 'BURUH TANI/PERKEBUNAN', '-'),
@@ -2359,9 +2360,9 @@ INSERT INTO `masyarakat` (`nik`, `no_kk`, `nama`, `dusun`, `rt`, `rw`, `desa`, `
 ('3207130701920005', 3207131709070088, 'TATANG SASURYADI', 'DUSUN BENTUK SARI', '6', '6', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '07-01-1992', 'Laki-laki', 'Islam', 'Belum Kawin', 'BELUM/TIDAK BEKERJA', '-'),
 ('3207130702150002', 3207131201120008, 'SEPTIAN FEBRIANSYAH', 'DUSUN CITAPEN PASIR', '2', '1', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '07-02-2015', 'Laki-laki', 'Islam', 'Belum Kawin', 'BELUM/TIDAK BEKERJA', '-'),
 ('3207130702550003', 3207132209070066, 'JUNAEDI', 'CITAPEN PASIR', '10', '2', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '07-02-1955', 'Laki-laki', 'Islam', 'Kawin', 'PERDAGANGAN', '-'),
-('3207130702610003', 3207130601090004, 'DARSIM', 'DUSUN CITAPEN LANDEUH', '10', '4', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '07-02-1961', 'Laki-laki', 'Islam', 'Kawin', 'PETANI/PEKEBUN', '-'),
-('3207130702630001', 3207132309070419, 'JUMADI', 'DUSUN CITAPEN PASIR', '3', '1', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '07-02-1963', 'Laki-laki', 'Islam', 'Kawin', 'TUKANG KAYU', '-');
+('3207130702610003', 3207130601090004, 'DARSIM', 'DUSUN CITAPEN LANDEUH', '10', '4', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '07-02-1961', 'Laki-laki', 'Islam', 'Kawin', 'PETANI/PEKEBUN', '-');
 INSERT INTO `masyarakat` (`nik`, `no_kk`, `nama`, `dusun`, `rt`, `rw`, `desa`, `kecamatan`, `kabupaten`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `agama`, `status_perkawinan`, `pekerjaan`, `gol_darah`) VALUES
+('3207130702630001', 3207132309070419, 'JUMADI', 'DUSUN CITAPEN PASIR', '3', '1', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '07-02-1963', 'Laki-laki', 'Islam', 'Kawin', 'TUKANG KAYU', '-'),
 ('3207130702700002', 3207132309070223, 'NORON', 'DUSUN CITAPEN PASIR', '5', '1', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '07-02-1970', 'Laki-laki', 'Islam', 'Kawin', 'BURUH HARIAN LEPAS', '-'),
 ('3207130702820001', 3207130507100002, 'CAHYADI', 'DUSUN JAMURESI', '8', '8', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '07-02-1982', 'Laki-laki', 'Islam', 'Kawin', 'WIRASWASTA', '-'),
 ('3207130702880001', 3207132801110001, 'HENDRI KUSUMA WIJAYA', 'DUSUN JAMURESI', '2', '7', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '07-02-1988', 'Laki-laki', 'Islam', 'Kawin', 'WIRASWASTA', '-'),
@@ -2596,6 +2597,7 @@ INSERT INTO `masyarakat` (`nik`, `no_kk`, `nama`, `dusun`, `rt`, `rw`, `desa`, `
 ('3207130908750003', 3207132509070278, 'MAMAT', 'DUSUN CITAPEN LANDEUH', '10', '4', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '09-08-1975', 'Laki-laki', 'Islam', 'Kawin', 'PETANI/PEKEBUN', '-'),
 ('3207130908820002', 3207131607120001, 'OPIK HIDAYAT', 'CITAPENLANDEUH', '5', '3', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '06-12-1983', 'Laki-laki', 'Islam', 'Kawin', 'BURUH TANI/PERKEBUNAN', '-'),
 ('3207130908970002', 3207132609070295, 'UDIN JAHRUDIN', 'DUSUN CITAPEN LANDEUH', '7', '3', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '09-08-1997', 'Laki-laki', 'Islam', 'Belum Kawin', 'BELUM/TIDAK BEKERJA', '-'),
+('3207130908990002', 3207130908990002, 'Wawan', 'Pabuaran', '001', '002', 'Sukajaya', 'Rajadesa', 'Ciamis', 'Ciamis', '01 Januari 1999', 'Laki-laki', 'Islam', '', '', ''),
 ('3207130909080002', 3207131609070207, 'FAUZI RAMDHANI', 'DUSUN BENTUKSARI', '4', '6', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '09-09-2008', 'Laki-laki', 'Islam', 'Belum Kawin', 'BELUM/TIDAK BEKERJA', '-'),
 ('3207130909170002', 3207132209070533, 'AZRA MAULANA FIKRI', 'DUSUN CITAPEN PASIR', '6', '1', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '09-09-2017', 'Laki-laki', 'Islam', 'Belum Kawin', 'BELUM/TIDAK BEKERJA', '-'),
 ('3207130909790004', 3207131909070701, 'DEDI', 'DUSUN JAMURESI', '7', '8', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '09-09-1979', 'Laki-laki', 'Islam', 'Kawin', 'PERDAGANGAN', '-'),
@@ -2608,9 +2610,9 @@ INSERT INTO `masyarakat` (`nik`, `no_kk`, `nama`, `dusun`, `rt`, `rw`, `desa`, `
 ('3207130910000002', 3207132009070571, 'SOLEHUDIN', 'CITAPEN PASIR', '7', '2', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '09-10-2000', 'Laki-laki', 'Islam', 'Belum Kawin', 'BELUM/TIDAK BEKERJA', '-'),
 ('3207130910040001', 3207131809070300, 'RIFKI RAMDANI', 'DUSUN JAMURESI', '10', '8', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '09-10-2004', 'Laki-laki', 'Islam', 'Belum Kawin', 'PELAJAR/MAHASISWA', '-'),
 ('3207130910800003', 3207130302090004, 'DARSIM, S.Pd.', 'DUSUN CITAPENPASIR', '9', '2', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '09-10-1980', 'Laki-laki', 'Islam', 'Kawin', 'PEGAWAI NEGERI SIPIL', '-'),
-('3207130910970004', 3207131809070351, 'EKO RIANTO', 'DUSUN JAMURESI', '10', '8', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '09-10-1997', 'Laki-laki', 'Islam', 'Belum Kawin', 'PELAJAR/MAHASISWA', '-'),
-('3207130911030001', 3207132409070167, 'RIO SEPTIA ROMADHON', 'DUSUN CITAPEN PASIR', '2', '1', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '09-11-2003', 'Laki-laki', 'Islam', 'Belum Kawin', 'BELUM/TIDAK BEKERJA', '-');
+('3207130910970004', 3207131809070351, 'EKO RIANTO', 'DUSUN JAMURESI', '10', '8', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '09-10-1997', 'Laki-laki', 'Islam', 'Belum Kawin', 'PELAJAR/MAHASISWA', '-');
 INSERT INTO `masyarakat` (`nik`, `no_kk`, `nama`, `dusun`, `rt`, `rw`, `desa`, `kecamatan`, `kabupaten`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `agama`, `status_perkawinan`, `pekerjaan`, `gol_darah`) VALUES
+('3207130911030001', 3207132409070167, 'RIO SEPTIA ROMADHON', 'DUSUN CITAPEN PASIR', '2', '1', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '09-11-2003', 'Laki-laki', 'Islam', 'Belum Kawin', 'BELUM/TIDAK BEKERJA', '-'),
 ('3207130911660001', 3207131609070228, 'SULAEMAN', 'DUSUN BENTUK SARI', '4', '6', 'Sukajaya', 'Rajadesa', 'Ciamis', 'KUNINGAN', '09-11-1966', 'Laki-laki', 'Islam', 'Kawin', 'PETANI/PEKEBUN', '-'),
 ('3207130911680002', 3207132610070085, 'AHROM', 'DUSUN JAMURESI', '7', '8', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '09-11-1968', 'Laki-laki', 'Islam', 'Kawin', 'PETANI/PEKEBUN', '-'),
 ('3207130911700001', 3207132409070265, 'DEDI', 'DUSUN CITAPEN PASIR', '2', '1', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '09-11-1970', 'Laki-laki', 'Islam', 'Kawin', 'BURUH HARIAN LEPAS', '-'),
@@ -2857,9 +2859,9 @@ INSERT INTO `masyarakat` (`nik`, `no_kk`, `nama`, `dusun`, `rt`, `rw`, `desa`, `
 ('3207131203900001', 3207131809070401, 'RICKI', 'DUSUN JAMURESI', '11', '8', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '12-03-1990', 'Laki-laki', 'Islam', 'Belum Kawin', 'MEKANIK', '-'),
 ('3207131204570002', 3207132009070341, 'EMONG', 'DUSUN JAMURESI', '12', '8', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '12-04-1957', 'Laki-laki', 'Islam', 'Kawin', 'PETANI/PEKEBUN', '-'),
 ('3207131204650002', 3207131609070245, 'MANSUR', 'DUSUN BENTUKSARI', '4', '6', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '12-04-1965', 'Laki-laki', 'Islam', 'Kawin', 'PETANI/PEKEBUN', '-'),
-('3207131204650005', 3207132509070120, 'TARSUM', 'DUSUN CITAPEN LANDEUH', '8', '4', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '12-04-1965', 'Laki-laki', 'Islam', 'Kawin', 'WIRASWASTA', '-'),
-('3207131204660004', 3207132309070180, 'ESO', 'DUSUN BENTUKSARI', '7', '6', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '12-04-1966', 'Laki-laki', 'Islam', 'Kawin', 'PETANI/PEKEBUN', '-');
+('3207131204650005', 3207132509070120, 'TARSUM', 'DUSUN CITAPEN LANDEUH', '8', '4', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '12-04-1965', 'Laki-laki', 'Islam', 'Kawin', 'WIRASWASTA', '-');
 INSERT INTO `masyarakat` (`nik`, `no_kk`, `nama`, `dusun`, `rt`, `rw`, `desa`, `kecamatan`, `kabupaten`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `agama`, `status_perkawinan`, `pekerjaan`, `gol_darah`) VALUES
+('3207131204660004', 3207132309070180, 'ESO', 'DUSUN BENTUKSARI', '7', '6', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '12-04-1966', 'Laki-laki', 'Islam', 'Kawin', 'PETANI/PEKEBUN', '-'),
 ('3207131204670003', 3207132609070430, 'TARMIDI SUPRIADI', 'DUSUN CITAPEN LANDEUH', '6', '3', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '12-04-1967', 'Laki-laki', 'Islam', 'Kawin', 'PETANI/PEKEBUN', '-'),
 ('3207131204680004', 3207132609070072, 'NANA SUPRIATNA', 'DUSUN CITAPEN LANDEUH', '3', '3', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '12-04-1968', 'Laki-laki', 'Islam', 'Kawin', 'PETANI/PEKEBUN', '-'),
 ('3207131204680007', 3207131709070187, 'SOLEH', 'DUSUN JAMURESI', '3', '7', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '12-04-1968', 'Laki-laki', 'Islam', 'Kawin', 'PETANI/PEKEBUN', '-'),
@@ -3107,9 +3109,9 @@ INSERT INTO `masyarakat` (`nik`, `no_kk`, `nama`, `dusun`, `rt`, `rw`, `desa`, `
 ('3207131504750003', 3207132609070261, 'JAPAR', 'DUSUN CITAPEN LANDEUH', '1', '3', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '15-04-1975', 'Laki-laki', 'Islam', 'Kawin', 'PETANI/PEKEBUN', '-'),
 ('3207131504770002', 3207132409070052, 'AYUB', 'JAMURESI', '3', '7', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '15-04-1977', 'Laki-laki', 'Islam', 'Kawin', 'BURUH TANI/PERKEBUNAN', '-'),
 ('3207131504790001', 3207132409070338, 'SAHIDIN', 'DUSUN CITAPEN LANDEUH', '9', '4', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '15-04-1979', 'Laki-laki', 'Islam', 'Belum Kawin', 'PETANI/PEKEBUN', '-'),
-('3207131504810003', 3207132609070440, 'EKO ROSTAMAN', 'DUSUN CITAPEN LANDEUH', '4', '3', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '15-04-1981', 'Laki-laki', 'Islam', 'Kawin', 'PETANI/PEKEBUN', '-'),
-('3207131504850001', 3207131912100004, 'IPAN HILMI', 'CITAPEN LANDEUH', '8', '4', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '15-04-1985', 'Laki-laki', 'Islam', 'Kawin', 'BURUH TANI/PERKEBUNAN', '-');
+('3207131504810003', 3207132609070440, 'EKO ROSTAMAN', 'DUSUN CITAPEN LANDEUH', '4', '3', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '15-04-1981', 'Laki-laki', 'Islam', 'Kawin', 'PETANI/PEKEBUN', '-');
 INSERT INTO `masyarakat` (`nik`, `no_kk`, `nama`, `dusun`, `rt`, `rw`, `desa`, `kecamatan`, `kabupaten`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `agama`, `status_perkawinan`, `pekerjaan`, `gol_darah`) VALUES
+('3207131504850001', 3207131912100004, 'IPAN HILMI', 'CITAPEN LANDEUH', '8', '4', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '15-04-1985', 'Laki-laki', 'Islam', 'Kawin', 'BURUH TANI/PERKEBUNAN', '-'),
 ('3207131505020001', 3207131609070202, 'ADE ROHIMAN', 'DUSUN BENTUK SARI', '4', '6', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '15-05-2002', 'Laki-laki', 'Islam', 'Belum Kawin', 'BELUM/TIDAK BEKERJA', '-'),
 ('3207131505040003', 3207130911200002, 'EPAN RENALDI', 'DUSUN CITAPEN PASIR', '9', '2', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '15-05-2004', 'Laki-laki', 'Islam', 'Belum Kawin', 'PELAJAR/MAHASISWA', '-'),
 ('3207131505090001', 3207131404200003, 'SAEPUDIN', 'DUSUN JAMURESI', '2', '7', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '15-05-2009', 'Laki-laki', 'Islam', 'Belum Kawin', 'BELUM/TIDAK BEKERJA', '-'),
@@ -3354,9 +3356,9 @@ INSERT INTO `masyarakat` (`nik`, `no_kk`, `nama`, `dusun`, `rt`, `rw`, `desa`, `
 ('3207131810850002', 3207132212110003, 'TATA ANDRIANA', 'DUSUN CITAPEN LANDEUH', '3', '3', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '18-10-1985', 'Laki-laki', 'Islam', 'Kawin', 'BURUH HARIAN LEPAS', '-'),
 ('3207131810980001', 3207131502210002, 'PERI GUNAWAN', 'DUSUN BENTUKSARI', '6', '6', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '18-10-1998', 'Laki-laki', 'Islam', 'Kawin', 'WIRASWASTA', '-'),
 ('3207131811170001', 3207132607170002, 'ABBYAN YONO SUTOMO', 'DUSUN CITAPEN LANDEUH', '3', '3', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '18-11-2017', 'Laki-laki', 'Islam', 'Belum Kawin', 'BELUM/TIDAK BEKERJA', '-'),
-('3207131811390001', 3207132009070455, 'SUTA', 'DUSUN JAMURESI', '11', '8', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '18-11-1939', 'Laki-laki', 'Islam', 'Kawin', 'PETANI/PEKEBUN', '-'),
-('3207131811980001', 3207132309070194, 'YOGA', 'DUSUN BENTUKSARI', '7', '6', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '18-11-1998', 'Laki-laki', 'Islam', 'Belum Kawin', 'BELUM/TIDAK BEKERJA', '-');
+('3207131811390001', 3207132009070455, 'SUTA', 'DUSUN JAMURESI', '11', '8', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '18-11-1939', 'Laki-laki', 'Islam', 'Kawin', 'PETANI/PEKEBUN', '-');
 INSERT INTO `masyarakat` (`nik`, `no_kk`, `nama`, `dusun`, `rt`, `rw`, `desa`, `kecamatan`, `kabupaten`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `agama`, `status_perkawinan`, `pekerjaan`, `gol_darah`) VALUES
+('3207131811980001', 3207132309070194, 'YOGA', 'DUSUN BENTUKSARI', '7', '6', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '18-11-1998', 'Laki-laki', 'Islam', 'Belum Kawin', 'BELUM/TIDAK BEKERJA', '-'),
 ('3207131812100002', 3207132608090002, 'FATHUL FUADI AL HANIF', 'DUSUN CITAPENPASIR', '3', '1', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '18-12-2010', 'Laki-laki', 'Islam', 'Belum Kawin', 'BELUM/TIDAK BEKERJA', '-'),
 ('3207131812160002', 3207131802110021, 'PUTRA FATHIR DARMAWAN', 'JAMURESI', '11', '8', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '18-12-2016', 'Laki-laki', 'Islam', 'Belum Kawin', 'BELUM/TIDAK BEKERJA', '-'),
 ('3207131812190001', 3207132403200002, 'VINO DWI PRATAMA', 'DUSUN CITAPEN PASIR', '7', '2', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '18-12-2019', 'Laki-laki', 'Islam', 'Belum Kawin', 'BELUM/TIDAK BEKERJA', '-'),
@@ -3597,9 +3599,9 @@ INSERT INTO `masyarakat` (`nik`, `no_kk`, `nama`, `dusun`, `rt`, `rw`, `desa`, `
 ('3207132312740001', 3207132609070429, 'CARLIM', 'DUSUN CITAPEN LANDEUH', '4', '3', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '23-12-1974', 'Laki-laki', 'Islam', 'Kawin', 'BURUH HARIAN LEPAS', '-'),
 ('3207132312990002', 3207132309070390, 'HERI HERMAWAN', 'DUSUN CITAPEN PASIR', '3', '1', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '23-12-1999', 'Laki-laki', 'Islam', 'Belum Kawin', 'PELAJAR/MAHASISWA', '-'),
 ('3207132401040005', 3207131809070368, 'ADI SOPYAN BASTARI', 'DUSUN JAMURESI', '10', '8', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '24-01-2004', 'Laki-laki', 'Islam', 'Belum Kawin', 'BELUM/TIDAK BEKERJA', '-'),
-('3207132402110002', 3207131609070211, 'PAUZAN AL ANSORI', 'DUSUN BENTUK SARI', '4', '6', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '24-02-2011', 'Laki-laki', 'Islam', 'Belum Kawin', 'BELUM/TIDAK BEKERJA', '-'),
-('3207132402160002', 3207131009090004, 'FEBRIAN HASANUDIN', 'DUSUN CITAPEN PASIR', '7', '2', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '24-02-2016', 'Laki-laki', 'Islam', 'Belum Kawin', 'BELUM/TIDAK BEKERJA', '-');
+('3207132402110002', 3207131609070211, 'PAUZAN AL ANSORI', 'DUSUN BENTUK SARI', '4', '6', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '24-02-2011', 'Laki-laki', 'Islam', 'Belum Kawin', 'BELUM/TIDAK BEKERJA', '-');
 INSERT INTO `masyarakat` (`nik`, `no_kk`, `nama`, `dusun`, `rt`, `rw`, `desa`, `kecamatan`, `kabupaten`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `agama`, `status_perkawinan`, `pekerjaan`, `gol_darah`) VALUES
+('3207132402160002', 3207131009090004, 'FEBRIAN HASANUDIN', 'DUSUN CITAPEN PASIR', '7', '2', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '24-02-2016', 'Laki-laki', 'Islam', 'Belum Kawin', 'BELUM/TIDAK BEKERJA', '-'),
 ('3207132402180001', 3207131504190002, 'DERIS PEBRYAN SYAH', 'CITAPEN PASIR', '12', '2', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '24-02-2018', 'Laki-laki', 'Islam', 'Belum Kawin', 'BELUM/TIDAK BEKERJA', '-'),
 ('3207132402200003', 3207132205180002, 'MUHAMMAD FAHRIROHMAN', 'DUSUN CITAPEN PASIR', '5', '1', 'Sukajaya', 'Rajadesa', 'Ciamis', 'BANDUNG BARAT', '24-02-2020', 'Laki-laki', 'Islam', 'Belum Kawin', 'BELUM/TIDAK BEKERJA', '-'),
 ('3207132402360001', 3207132609070316, 'SUHANDA', 'DUSUN CITAPEN LANDEUH', '2', '3', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '24-02-1936', 'Laki-laki', 'Islam', 'Kawin', 'PETANI/PEKEBUN', '-'),
@@ -3839,9 +3841,9 @@ INSERT INTO `masyarakat` (`nik`, `no_kk`, `nama`, `dusun`, `rt`, `rw`, `desa`, `
 ('3207133004030002', 3207132009070564, 'IBRA DZIKRI AL PADLI', 'CITAPEN PASIR', '7', '2', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '30-04-2003', 'Laki-laki', 'Islam', 'Belum Kawin', 'BELUM/TIDAK BEKERJA', '-'),
 ('3207133004160004', 3207130911200001, 'AFAN APRILIANA', 'DUSUNCITAPEN PASIR', '11', '2', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '30-04-2016', 'Laki-laki', 'Islam', 'Belum Kawin', 'BELUM/TIDAK BEKERJA', '-'),
 ('3207133004840001', 3207130906080001, 'ABDUL SOMAD', 'JAMURESI', '10', '8', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '30-04-1984', 'Laki-laki', 'Islam', 'Kawin', 'PEDAGANG', '-'),
-('3207133004850001', 3207132609070009, 'HAMIM', 'DUSUN CITAPEN LANDEUH', '10', '4', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '30-04-1985', 'Laki-laki', 'Islam', 'Belum Kawin', 'BELUM/TIDAK BEKERJA', '-'),
-('3207133004940001', 3207131906190019, 'REZA RESTU GUMILAR', 'DUSUN BENTUKSARI', '6', '6', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '30-04-1994', 'Laki-laki', 'Islam', 'Kawin', 'BURUH HARIAN LEPAS', '-');
+('3207133004850001', 3207132609070009, 'HAMIM', 'DUSUN CITAPEN LANDEUH', '10', '4', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '30-04-1985', 'Laki-laki', 'Islam', 'Belum Kawin', 'BELUM/TIDAK BEKERJA', '-');
 INSERT INTO `masyarakat` (`nik`, `no_kk`, `nama`, `dusun`, `rt`, `rw`, `desa`, `kecamatan`, `kabupaten`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `agama`, `status_perkawinan`, `pekerjaan`, `gol_darah`) VALUES
+('3207133004940001', 3207131906190019, 'REZA RESTU GUMILAR', 'DUSUN BENTUKSARI', '6', '6', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '30-04-1994', 'Laki-laki', 'Islam', 'Kawin', 'BURUH HARIAN LEPAS', '-'),
 ('3207133005060001', 3207131909070445, 'ASEP NUR AMIR MARUF', 'DUSUN JAMURESI', '5', '7', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '30-05-2006', 'Laki-laki', 'Islam', 'Belum Kawin', 'BELUM/TIDAK BEKERJA', '-'),
 ('3207133006050001', 3207131709070319, 'ABDUL JALALUDIN', 'DUSUN JAMURESI', '5', '7', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '30-06-2005', 'Laki-laki', 'Islam', 'Belum Kawin', 'BELUM/TIDAK BEKERJA', '-'),
 ('3207133006070001', 3207132509070144, 'AJI PAUJI', 'DUSUN CITAPEN LANDEUH', '8', '4', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '30-06-2007', 'Laki-laki', 'Islam', 'Belum Kawin', 'BELUM/TIDAK BEKERJA', '-'),
@@ -4090,9 +4092,9 @@ INSERT INTO `masyarakat` (`nik`, `no_kk`, `nama`, `dusun`, `rt`, `rw`, `desa`, `
 ('3207134204130001', 3207132412110003, 'AJENG FITRIYANI', 'DUSUN CITAPENLANDEUH', '10', '4', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '02-04-2013', 'Perempuan', 'Islam', 'Belum Kawin', 'BELUM/TIDAK BEKERJA', '-'),
 ('3207134204210001', 3207130802210002, 'KHAIRA NINDYA ROHMAH', 'DUSUN JAMURESI', '11', '8', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '02-04-2021', 'Perempuan', 'Islam', 'Belum Kawin', 'BELUM/TIDAK BEKERJA', '-'),
 ('3207134204500003', 3207132009070553, 'EDAH', 'DUSUN JAMURESI', '9', '8', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '02-04-1950', 'Perempuan', 'Islam', 'Kawin', 'PETANI/PEKEBUN', '-'),
-('3207134204640004', 3207131809070537, 'AMINAH', 'DUSUN JAMURESI', '4', '7', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '02-04-1964', 'Perempuan', 'Islam', 'Kawin', 'TUKANG JAHIT', '-'),
-('3207134204790001', 3207132109070355, 'NENGSIH', 'CITAPEN PASIR', '8', '2', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '02-04-1979', 'Perempuan', 'Islam', 'Kawin', 'BURUH TANI/PERKEBUNAN', '-');
+('3207134204640004', 3207131809070537, 'AMINAH', 'DUSUN JAMURESI', '4', '7', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '02-04-1964', 'Perempuan', 'Islam', 'Kawin', 'TUKANG JAHIT', '-');
 INSERT INTO `masyarakat` (`nik`, `no_kk`, `nama`, `dusun`, `rt`, `rw`, `desa`, `kecamatan`, `kabupaten`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `agama`, `status_perkawinan`, `pekerjaan`, `gol_darah`) VALUES
+('3207134204790001', 3207132109070355, 'NENGSIH', 'CITAPEN PASIR', '8', '2', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '02-04-1979', 'Perempuan', 'Islam', 'Kawin', 'BURUH TANI/PERKEBUNAN', '-'),
 ('3207134204810002', 3207132509070244, 'OON', 'DUSUN CITAPEN LANDEUH', '10', '4', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '02-04-1981', 'Perempuan', 'Islam', 'Kawin', 'MENGURUS RUMAH TANGGA', '-'),
 ('3207134204870004', 3207131608110003, 'ELA NURLAELA', 'DUSUN CITAPEN PASIR', '8', '2', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '02-04-1987', 'Perempuan', 'Islam', 'Kawin', 'MENGURUS RUMAH TANGGA', '-'),
 ('3207134205460001', 3207132209070057, 'OCOH', 'CITAPEN PASIR', '10', '2', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '02-05-1946', 'Perempuan', 'Islam', 'Kawin', 'MENGURUS RUMAH TANGGA', '-'),
@@ -4336,9 +4338,9 @@ INSERT INTO `masyarakat` (`nik`, `no_kk`, `nama`, `dusun`, `rt`, `rw`, `desa`, `
 ('3207134506510001', 3207132610070085, 'NEWI', 'DUSUN JAMURESI', '7', '8', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '05-06-1951', 'Perempuan', 'Islam', 'Cerai Mati', 'BELUM/TIDAK BEKERJA', '-'),
 ('3207134506600001', 3207132209070031, 'RODIAH', 'DUSUN CITAPEN PASIR', '10', '2', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '05-06-1960', 'Perempuan', 'Islam', 'Cerai Mati', 'MENGURUS RUMAH TANGGA', '-'),
 ('3207134506640004', 3207132610070067, 'SYARIAH', 'DUSUN CITAPEN PASIR', '10', '2', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '05-06-1964', 'Perempuan', 'Islam', 'Kawin', 'MENGURUS RUMAH TANGGA', '-'),
-('3207134506690003', 3207132309070061, 'LILIS KOMARIAH', 'DUSUN BENTUKSARI', '2', '5', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '05-06-1969', 'Perempuan', 'Islam', 'Kawin', 'MENGURUS RUMAH TANGGA', '-'),
-('3207134506710003', 3207132609070263, 'ENAH', 'DUSUN CITAPEN LANDEUH', '1', '3', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '05-06-1971', 'Perempuan', 'Islam', 'Kawin', 'MENGURUS RUMAH TANGGA', '-');
+('3207134506690003', 3207132309070061, 'LILIS KOMARIAH', 'DUSUN BENTUKSARI', '2', '5', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '05-06-1969', 'Perempuan', 'Islam', 'Kawin', 'MENGURUS RUMAH TANGGA', '-');
 INSERT INTO `masyarakat` (`nik`, `no_kk`, `nama`, `dusun`, `rt`, `rw`, `desa`, `kecamatan`, `kabupaten`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `agama`, `status_perkawinan`, `pekerjaan`, `gol_darah`) VALUES
+('3207134506710003', 3207132609070263, 'ENAH', 'DUSUN CITAPEN LANDEUH', '1', '3', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '05-06-1971', 'Perempuan', 'Islam', 'Kawin', 'MENGURUS RUMAH TANGGA', '-'),
 ('3207134506740005', 3207131710140001, 'EHAT SOLIHAT', 'DUSUN JAMURESI', '10', '8', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '05-06-1974', 'Perempuan', 'Islam', 'Kawin', 'TUKANG JAHIT', '-'),
 ('3207134506740008', 3207132209070401, 'DASIMI', 'DUSUN CITAPEN PASIR', '11', '2', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '05-06-1974', 'Perempuan', 'Islam', 'Kawin', 'MENGURUS RUMAH TANGGA', '-'),
 ('3207134506740009', 3207132309070390, 'JAENAH', 'DUSUN CITAPEN PASIR', '3', '1', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '05-06-1974', 'Perempuan', 'Islam', 'Kawin', 'PERDAGANGAN', '-'),
@@ -4584,9 +4586,9 @@ INSERT INTO `masyarakat` (`nik`, `no_kk`, `nama`, `dusun`, `rt`, `rw`, `desa`, `
 ('3207134712050001', 3207132609070429, 'SISKA DESTIANA', 'DUSUN CITAPEN LANDEUH', '4', '3', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '07-12-2005', 'Perempuan', 'Islam', 'Belum Kawin', 'BELUM/TIDAK BEKERJA', '-'),
 ('3207134712110001', 3207130305100002, 'MELANI AULIA', 'DUSUN BENTUKSARI', '1', '5', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '07-12-2011', 'Perempuan', 'Islam', 'Belum Kawin', 'BELUM/TIDAK BEKERJA', '-'),
 ('3207134712660002', 3207132509070174, 'ICIH', 'DUSUN CITAPEN LANDEUH', '9', '4', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '07-12-1966', 'Perempuan', 'Islam', 'Kawin', 'PETANI/PEKEBUN', '-'),
-('3207134712800004', 3207131007090004, 'MUTMAINAH SITI MAESYAROH', 'DUSUN CITAPEN PASIR', '4', '1', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '07-12-1980', 'Perempuan', 'Islam', 'Kawin', 'MENGURUS RUMAH TANGGA', '-'),
-('3207134712940002', 3207132709070259, 'RINI ANDRIANI', 'DUSUN CITAPEN LANDEUH', '5', '3', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIMAIS', '07-12-1994', 'Perempuan', 'Islam', 'Belum Kawin', 'BELUM/TIDAK BEKERJA', '-');
+('3207134712800004', 3207131007090004, 'MUTMAINAH SITI MAESYAROH', 'DUSUN CITAPEN PASIR', '4', '1', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '07-12-1980', 'Perempuan', 'Islam', 'Kawin', 'MENGURUS RUMAH TANGGA', '-');
 INSERT INTO `masyarakat` (`nik`, `no_kk`, `nama`, `dusun`, `rt`, `rw`, `desa`, `kecamatan`, `kabupaten`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `agama`, `status_perkawinan`, `pekerjaan`, `gol_darah`) VALUES
+('3207134712940002', 3207132709070259, 'RINI ANDRIANI', 'DUSUN CITAPEN LANDEUH', '5', '3', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIMAIS', '07-12-1994', 'Perempuan', 'Islam', 'Belum Kawin', 'BELUM/TIDAK BEKERJA', '-'),
 ('3207134801000001', 3207132407190009, 'MELINIA', 'DUSUN CITAPEN LANDEUH', '10', '4', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '08-01-2000', 'Perempuan', 'Islam', 'Kawin', 'MENGURUS RUMAH TANGGA', '-'),
 ('3207134801080001', 3207131909070650, 'IIM SITI MAESAROH', 'DUSUN JAMURESI', '2', '7', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '08-01-2008', 'Perempuan', 'Islam', 'Belum Kawin', 'BELUM/TIDAK BEKERJA', '-'),
 ('3207134801810002', 3207132609070375, 'EBAH NUR RAHMAWATI', 'DUSUN CITAPEN LANDEUH', '2', '3', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '08-01-1981', 'Perempuan', 'Islam', 'Kawin', 'PEDAGANG', '-'),
@@ -4831,9 +4833,9 @@ INSERT INTO `masyarakat` (`nik`, `no_kk`, `nama`, `dusun`, `rt`, `rw`, `desa`, `
 ('3207135011630002', 3207132309070025, 'AAN ANAH', 'DUSUN BENTUKSARI', '2', '5', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '10-11-1963', 'Perempuan', 'Islam', 'Kawin', 'MENGURUS RUMAH TANGGA', '-'),
 ('3207135011720001', 3207131909070670, 'EEN', 'DUSUN JAMURESI', '2', '7', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '10-11-1970', 'Perempuan', 'Islam', 'Kawin', 'MENGURUS RUMAH TANGGA', '-'),
 ('3207135011830003', 3207132609070037, 'RUSYANI', 'DUSUN CITAPEN LANDEUH', '3', '3', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '10-11-1983', 'Perempuan', 'Islam', 'Belum Kawin', 'BURUH HARIAN LEPAS', '-'),
-('3207135011930006', 3207132709070262, 'TITI ROHAETI', 'DUSUN CITAPEN LANDEUH', '5', '3', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIMAIS', '10-11-1993', 'Perempuan', 'Islam', 'Belum Kawin', 'PELAJAR/MAHASISWA', '-'),
-('3207135012170001', 3207132709070433, 'ANNA KHAIRIYAH', 'DUSUN CITAPEN LANDEUH', '7', '3', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '10-12-2017', 'Perempuan', 'Islam', 'Belum Kawin', 'BELUM/TIDAK BEKERJA', '-');
+('3207135011930006', 3207132709070262, 'TITI ROHAETI', 'DUSUN CITAPEN LANDEUH', '5', '3', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIMAIS', '10-11-1993', 'Perempuan', 'Islam', 'Belum Kawin', 'PELAJAR/MAHASISWA', '-');
 INSERT INTO `masyarakat` (`nik`, `no_kk`, `nama`, `dusun`, `rt`, `rw`, `desa`, `kecamatan`, `kabupaten`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `agama`, `status_perkawinan`, `pekerjaan`, `gol_darah`) VALUES
+('3207135012170001', 3207132709070433, 'ANNA KHAIRIYAH', 'DUSUN CITAPEN LANDEUH', '7', '3', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '10-12-2017', 'Perempuan', 'Islam', 'Belum Kawin', 'BELUM/TIDAK BEKERJA', '-'),
 ('3207135012490001', 3207130803210005, 'UTIMI', 'DUSUN JAMURESI', '8', '8', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '10-12-1949', 'Perempuan', 'Islam', 'Cerai Mati', 'MENGURUS RUMAH TANGGA', '-'),
 ('3207135012600003', 3207132309070236, 'OCOH', 'DUSUN CITAPEN PASIR', '5', '1', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '10-12-1960', 'Perempuan', 'Islam', 'Kawin', 'MENGURUS RUMAH TANGGA', '-'),
 ('3207135012630002', 3207132409070179, 'EROH', 'DUSUN CITAPEN PASIR', '2', '1', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '10-12-1963', 'Perempuan', 'Islam', 'Cerai Mati', 'BURUH HARIAN LEPAS', '-'),
@@ -5079,9 +5081,9 @@ INSERT INTO `masyarakat` (`nik`, `no_kk`, `nama`, `dusun`, `rt`, `rw`, `desa`, `
 ('3207135306050002', 3207131609070296, 'PUPU PURNAMA NINGSIH', 'DUSUN BENTUK SARI', '5', '6', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '13-06-2005', 'Perempuan', 'Islam', 'Belum Kawin', 'BELUM/TIDAK BEKERJA', '-'),
 ('3207135306480001', 3207132009070336, 'ENOH', 'DUSUN JAMURESI', '12', '8', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '13-06-1948', 'Perempuan', 'Islam', 'Kawin', 'PERDAGANGAN', '-'),
 ('3207135306820004', 3207130707090002, 'EMA NURHUJAEMAH', 'DUSUN CITAPEN PASIR', '10', '2', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '13-06-1982', 'Perempuan', 'Islam', 'Kawin', 'MENGURUS RUMAH TANGGA', '-'),
-('3207135306940002', 3207132111120003, 'JULEHA', 'DUSUN BENTUK SARI', '4', '6', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '13-06-1994', 'Perempuan', 'Islam', 'Kawin', 'MENGURUS RUMAH TANGGA', '-'),
-('3207135307530003', 3207132409070302, 'UTIMAH', 'DUSUN CITAPEN PASIR', '1', '1', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '13-07-1953', 'Perempuan', 'Islam', 'Kawin', 'MENGURUS RUMAH TANGGA', '-');
+('3207135306940002', 3207132111120003, 'JULEHA', 'DUSUN BENTUK SARI', '4', '6', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '13-06-1994', 'Perempuan', 'Islam', 'Kawin', 'MENGURUS RUMAH TANGGA', '-');
 INSERT INTO `masyarakat` (`nik`, `no_kk`, `nama`, `dusun`, `rt`, `rw`, `desa`, `kecamatan`, `kabupaten`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `agama`, `status_perkawinan`, `pekerjaan`, `gol_darah`) VALUES
+('3207135307530003', 3207132409070302, 'UTIMAH', 'DUSUN CITAPEN PASIR', '1', '1', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '13-07-1953', 'Perempuan', 'Islam', 'Kawin', 'MENGURUS RUMAH TANGGA', '-'),
 ('3207135307540003', 3207131709070096, 'KARNAH', 'DUSUN BENTUKSARI', '6', '6', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '13-07-1954', 'Perempuan', 'Islam', 'Kawin', 'MENGURUS RUMAH TANGGA', '-'),
 ('3207135307610002', 3207132009070506, 'CICIH', 'DUSUN JAMURESI', '9', '8', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '13-07-1961', 'Perempuan', 'Islam', 'Kawin', 'PETANI/PEKEBUN', '-'),
 ('3207135307910002', 3207132306190005, 'YUYU', 'DUSUN CITAPEN PASIR', '5', '1', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '13-07-1991', 'Perempuan', 'Islam', 'Belum Kawin', 'PEMBANTU RUMAH TANGGA', 'O-'),
@@ -5325,9 +5327,9 @@ INSERT INTO `masyarakat` (`nik`, `no_kk`, `nama`, `dusun`, `rt`, `rw`, `desa`, `
 ('3207135708800003', 3207132609070248, 'JOJOH', 'DUSUN CITAPEN LANDEUH', '1', '3', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '17-08-1980', 'Perempuan', 'Islam', 'Kawin', 'MENGURUS RUMAH TANGGA', '-'),
 ('3207135708940001', 3207132605150002, 'ENTIN AGUSTINA', 'DUSUN BENTUK SARI', '3', '5', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '17-08-1992', 'Perempuan', 'Islam', 'Kawin', 'MENGURUS RUMAH TANGGA', '-'),
 ('3207135709030002', 3207132609070070, 'SINTYAWATI', 'DUSUN CITAPEN LANDEUH', '3', '3', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '17-09-2003', 'Perempuan', 'Islam', 'Belum Kawin', 'BELUM/TIDAK BEKERJA', '-'),
-('3207135709360001', 3207132009070446, 'DEWI', 'DUSUN JAMURESI', '12', '8', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '17-09-1936', 'Perempuan', 'Islam', 'Cerai Mati', 'BURUH TANI/PERKEBUNAN', '-'),
-('3207135709560001', 3207131909070444, 'SATIJAH', 'DUSUN JAMURESI', '4', '7', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '17-09-1956', 'Perempuan', 'Islam', 'Kawin', 'PERDAGANGAN', '-');
+('3207135709360001', 3207132009070446, 'DEWI', 'DUSUN JAMURESI', '12', '8', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '17-09-1936', 'Perempuan', 'Islam', 'Cerai Mati', 'BURUH TANI/PERKEBUNAN', '-');
 INSERT INTO `masyarakat` (`nik`, `no_kk`, `nama`, `dusun`, `rt`, `rw`, `desa`, `kecamatan`, `kabupaten`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `agama`, `status_perkawinan`, `pekerjaan`, `gol_darah`) VALUES
+('3207135709560001', 3207131909070444, 'SATIJAH', 'DUSUN JAMURESI', '4', '7', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '17-09-1956', 'Perempuan', 'Islam', 'Kawin', 'PERDAGANGAN', '-'),
 ('3207135709610001', 3207132805150001, 'MAE', 'DUSUN BENTUK SARI', '3', '5', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '17-09-1961', 'Perempuan', 'Islam', 'Cerai Mati', 'MENGURUS RUMAH TANGGA', '-'),
 ('3207135709740001', 3207131609070234, 'AAH', 'DUSUN BENTUK SARI', '4', '6', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '17-09-1974', 'Perempuan', 'Islam', 'Kawin', 'MENGURUS RUMAH TANGGA', '-'),
 ('3207135709770001', 3207132109070357, 'EHA', 'DUSUN CITAPEN PASIR', '8', '2', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '17-09-1977', 'Perempuan', 'Islam', 'Kawin', 'MENGURUS RUMAH TANGGA', '-'),
@@ -5569,9 +5571,9 @@ INSERT INTO `masyarakat` (`nik`, `no_kk`, `nama`, `dusun`, `rt`, `rw`, `desa`, `
 ('3207136107820003', 3207132209070045, 'SITI MARYAM', 'DUSUN CITAPEN PASIR', '10', '2', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '21-07-1982', 'Perempuan', 'Islam', 'Kawin', 'MENGURUS RUMAH TANGGA', '-'),
 ('3207136107830003', 3207132309110003, 'EROM', 'DUSUN BENTUKSARI', '7', '6', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '21-07-1983', 'Perempuan', 'Islam', 'Kawin', 'MENGURUS RUMAH TANGGA', '-'),
 ('3207136107860001', 3207131709070198, 'NURSILAH', 'DUSUN JAMURESI', '3', '7', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '21-07-1986', 'Perempuan', 'Islam', 'Kawin', 'MENGURUS RUMAH TANGGA', '-'),
-('3207136107890006', 3207132012120003, 'HERNAWATI', 'DUSUN JAMURESI ', '12', '8', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '21-07-1989', 'Perempuan', 'Islam', 'Kawin', 'MENGURUS RUMAH TANGGA', '-'),
-('3207136108080002', 3207131702090001, 'RIRIN NURAENI', 'DUSUN CITAPENLANDEUH', '9', '4', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '21-08-2008', 'Perempuan', 'Islam', 'Belum Kawin', 'BELUM/TIDAK BEKERJA', '-');
+('3207136107890006', 3207132012120003, 'HERNAWATI', 'DUSUN JAMURESI ', '12', '8', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '21-07-1989', 'Perempuan', 'Islam', 'Kawin', 'MENGURUS RUMAH TANGGA', '-');
 INSERT INTO `masyarakat` (`nik`, `no_kk`, `nama`, `dusun`, `rt`, `rw`, `desa`, `kecamatan`, `kabupaten`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `agama`, `status_perkawinan`, `pekerjaan`, `gol_darah`) VALUES
+('3207136108080002', 3207131702090001, 'RIRIN NURAENI', 'DUSUN CITAPENLANDEUH', '9', '4', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '21-08-2008', 'Perempuan', 'Islam', 'Belum Kawin', 'BELUM/TIDAK BEKERJA', '-'),
 ('3207136108100003', 3207131802110021, 'PUTRI ADHIA RAMADANI', 'JAMURESI', '11', '8', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '21-08-2010', 'Perempuan', 'Islam', 'Belum Kawin', 'BELUM/TIDAK BEKERJA', '-'),
 ('3207136108540001', 3207131609070280, 'MAE', 'DUSUN BENTUK SARI', '5', '6', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '21-08-1954', 'Perempuan', 'Islam', 'Kawin', 'MENGURUS RUMAH TANGGA', '-'),
 ('3207136108560001', 3207131706200012, 'DESIH', 'DUSUN JAMURESI', '12', '8', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '21-08-1956', 'Perempuan', 'Islam', 'Belum Kawin', 'BURUH TANI/PERKEBUNAN', '-'),
@@ -5811,9 +5813,9 @@ INSERT INTO `masyarakat` (`nik`, `no_kk`, `nama`, `dusun`, `rt`, `rw`, `desa`, `
 ('3207136708160002', 3207132610070040, 'RISTA AINUL WAFA', 'DUSUN CITAPEN PASIR', '12', '2', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '27-08-2016', 'Perempuan', 'Islam', 'Belum Kawin', 'BELUM/TIDAK BEKERJA', '-'),
 ('3207136708800001', 3207132211170003, 'NUNUNG NURJANAH', 'CITAPEN PASIR', '8', '2', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '27-08-1980', 'Perempuan', 'Islam', 'Kawin', 'BURUH TANI/PERKEBUNAN', '-'),
 ('3207136708810003', 3207132609070319, 'ANAH', 'DUSUN CITAPEN LANDEUH', '2', '3', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '27-08-1981', 'Perempuan', 'Islam', 'Kawin', 'MENGURUS RUMAH TANGGA', '-'),
-('3207136708830001', 3207132209070540, 'YENI', 'DUSUN CITAPEN PASIR', '4', '1', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '27-08-1983', 'Perempuan', 'Islam', 'Kawin', 'MENGURUS RUMAH TANGGA', '-'),
-('3207136708950003', 3207131402200003, 'VERAMILA AGUSTINA', 'CITAPEN PASIR', '8', '2', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '27-08-1995', 'Perempuan', 'Islam', 'Kawin', 'MENGURUS RUMAH TANGGA', '-');
+('3207136708830001', 3207132209070540, 'YENI', 'DUSUN CITAPEN PASIR', '4', '1', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '27-08-1983', 'Perempuan', 'Islam', 'Kawin', 'MENGURUS RUMAH TANGGA', '-');
 INSERT INTO `masyarakat` (`nik`, `no_kk`, `nama`, `dusun`, `rt`, `rw`, `desa`, `kecamatan`, `kabupaten`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `agama`, `status_perkawinan`, `pekerjaan`, `gol_darah`) VALUES
+('3207136708950003', 3207131402200003, 'VERAMILA AGUSTINA', 'CITAPEN PASIR', '8', '2', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '27-08-1995', 'Perempuan', 'Islam', 'Kawin', 'MENGURUS RUMAH TANGGA', '-'),
 ('3207136708990003', 3207131609070204, 'HANIA', 'DUSUN BENTUK SARI', '4', '6', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '27-08-1999', 'Perempuan', 'Islam', 'Belum Kawin', 'BELUM/TIDAK BEKERJA', '-'),
 ('3207136709190002', 3207130510170007, 'SITI RAHMAWATI', 'DUSUN CITAPEN PASIR', '7', '2', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '27-09-2019', 'Perempuan', 'Islam', 'Belum Kawin', 'BELUM/TIDAK BEKERJA', '-'),
 ('3207136709580001', 3207132509070225, 'ANAH', 'DUSUN CITAPEN LANDEUH', '10', '4', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '27-09-1958', 'Perempuan', 'Islam', 'Kawin', 'PETANI/PEKEBUN', '-'),
@@ -6055,9 +6057,9 @@ INSERT INTO `masyarakat` (`nik`, `no_kk`, `nama`, `dusun`, `rt`, `rw`, `desa`, `
 ('3602174806920001', 3207130909130004, 'LISWATI', 'DUSUN JAMURESI', '3', '7', 'Sukajaya', 'Rajadesa', 'Ciamis', 'LEBAK', '08-06-1992', 'Perempuan', 'Islam', 'Kawin', 'MENGURUS RUMAH TANGGA', '-'),
 ('3602214207830001', 3207132205180002, 'AAN', 'DUSUN CITAPEN PASIR', '5', '1', 'Sukajaya', 'Rajadesa', 'Ciamis', 'LEBAK', '02-07-1983', 'Perempuan', 'Islam', 'Kawin', 'MENGURUS RUMAH TANGGA', '-'),
 ('3603146311860001', 3207131809070445, 'RUKLAENINGSIH', 'JAMURESI', '1', '7', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '23-11-1986', 'Perempuan', 'Islam', 'Belum Kawin', 'KARYAWAN SWASTA', '-'),
-('3603180603770005', 3207132105180004, 'MAE', 'JAMURESI', '3', '7', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '06-03-1977', 'Perempuan', 'Islam', 'Kawin', 'MENGURUS RUMAH TANGGA', 'B+'),
-('3603180708820031', 3207131107180004, 'ONO SARTONO', 'DUSUN CITAPEN PASIR', '4', '1', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '07-08-1982', 'Laki-laki', 'Islam', 'Kawin', 'KARYAWAN SWASTA', 'O-');
+('3603180603770005', 3207132105180004, 'MAE', 'JAMURESI', '3', '7', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '06-03-1977', 'Perempuan', 'Islam', 'Kawin', 'MENGURUS RUMAH TANGGA', 'B+');
 INSERT INTO `masyarakat` (`nik`, `no_kk`, `nama`, `dusun`, `rt`, `rw`, `desa`, `kecamatan`, `kabupaten`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `agama`, `status_perkawinan`, `pekerjaan`, `gol_darah`) VALUES
+('3603180708820031', 3207131107180004, 'ONO SARTONO', 'DUSUN CITAPEN PASIR', '4', '1', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '07-08-1982', 'Laki-laki', 'Islam', 'Kawin', 'KARYAWAN SWASTA', 'O-'),
 ('3603181807720009', 3207132105180004, 'HASAN', 'JAMURESI', '3', '7', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '18-07-1972', 'Laki-laki', 'Islam', 'Kawin', 'KARYAWAN SWASTA', '-'),
 ('3671022508900001', 3207131101190004, 'DHIKA PRAMESYARA', 'DUSUN JAMURESI', '8', '8', 'Sukajaya', 'Rajadesa', 'Ciamis', 'TANGERANG', '25-08-1990', 'Laki-laki', 'Islam', 'Kawin', 'KARYAWAN SWASTA', '-'),
 ('3674066303700001', 3207132401190002, 'DUDUNG', 'DUSUN JAMURESI', '11', '8', 'Sukajaya', 'Rajadesa', 'Ciamis', 'CIAMIS', '23-03-1970', 'Laki-laki', 'Islam', 'Kawin', 'PEDAGANG', '-');
@@ -6085,6 +6087,8 @@ CREATE TABLE `suket_domisili` (
   `nik_termohon` varchar(18) COLLATE utf8mb4_general_ci DEFAULT NULL,
   `nama_lembaga` varchar(155) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
   `alamat_lembaga` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci,
+  `status` enum('proses','selesai','ditolak') COLLATE utf8mb4_general_ci NOT NULL DEFAULT 'proses',
+  `alamat_asal` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci,
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -6092,10 +6096,13 @@ CREATE TABLE `suket_domisili` (
 -- Dumping data for table `suket_domisili`
 --
 
-INSERT INTO `suket_domisili` (`id_surat`, `nik_pemohon`, `tujuan`, `nik_termohon`, `nama_lembaga`, `alamat_lembaga`, `created_at`) VALUES
-(1, '1502084305970001', 'sendiri', '', '', '', '2024-01-19 14:05:54'),
-(2, '1502084305970001', 'sendiri', '', '', '', '2024-01-19 14:32:41'),
-(3, '3207130807000001', 'sendiri', '', '', '', '2024-01-19 15:02:25');
+INSERT INTO `suket_domisili` (`id_surat`, `nik_pemohon`, `tujuan`, `nik_termohon`, `nama_lembaga`, `alamat_lembaga`, `status`, `alamat_asal`, `created_at`) VALUES
+(4, '3207130908990002', 'sendiri', NULL, '', '', 'ditolak', '', '2024-02-17 14:51:30'),
+(5, '3207130807000001', 'sendiri', '', '', '', 'selesai', '', '2024-02-17 15:26:07'),
+(6, '3207130807000001', 'sendiri', '', '', '', 'selesai', NULL, '2024-02-17 16:32:58'),
+(7, '3207130807000001', 'sendiri', '', '', '', 'selesai', NULL, '2024-02-17 16:35:38'),
+(8, '3207130807000001', 'sendiri', '', '', '', 'proses', NULL, '2024-02-17 16:39:48'),
+(9, '3207130807000001', 'sendiri', '', '', '', 'selesai', '-asdadasd', '2024-02-17 16:41:17');
 
 -- --------------------------------------------------------
 
@@ -6106,8 +6113,20 @@ INSERT INTO `suket_domisili` (`id_surat`, `nik_pemohon`, `tujuan`, `nik_termohon
 CREATE TABLE `suket_kelakuan_baik` (
   `id_surat` int NOT NULL,
   `nik_pemohon` varchar(18) COLLATE utf8mb4_general_ci NOT NULL,
-  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `status` enum('proses','selesai','ditolak') COLLATE utf8mb4_general_ci NOT NULL DEFAULT 'proses',
+  `tujuan` varchar(255) COLLATE utf8mb4_general_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `suket_kelakuan_baik`
+--
+
+INSERT INTO `suket_kelakuan_baik` (`id_surat`, `nik_pemohon`, `created_at`, `status`, `tujuan`) VALUES
+(1, '3207130807000001', '2024-02-17 15:27:26', 'ditolak', ''),
+(2, '3207130807000001', '2024-02-17 16:48:47', 'proses', ''),
+(3, '3207130807000001', '2024-02-17 16:49:18', 'proses', ''),
+(4, '3207130807000001', '2024-02-17 16:51:25', 'selesai', 'Melamar pekerjaan');
 
 -- --------------------------------------------------------
 
@@ -6122,8 +6141,16 @@ CREATE TABLE `suket_kematian` (
   `tanggal_meninggal` varchar(30) COLLATE utf8mb4_general_ci NOT NULL,
   `tempat_meninggal` varchar(100) COLLATE utf8mb4_general_ci NOT NULL,
   `penyebab_meninggal` text COLLATE utf8mb4_general_ci NOT NULL,
-  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `status` enum('proses','selesai','ditolak') COLLATE utf8mb4_general_ci NOT NULL DEFAULT 'proses'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `suket_kematian`
+--
+
+INSERT INTO `suket_kematian` (`id_surat`, `nik_pemohon`, `nik_termohon`, `tanggal_meninggal`, `tempat_meninggal`, `penyebab_meninggal`, `created_at`, `status`) VALUES
+(1, '3207130807000001', '3207134206990001', '2024-02-17', 'Kolam ikan', 'digigit belut', '2024-02-17 15:21:33', 'selesai');
 
 -- --------------------------------------------------------
 
@@ -6135,16 +6162,20 @@ CREATE TABLE `suket_usaha` (
   `id_surat` int NOT NULL,
   `nik_pemohon` varchar(18) COLLATE utf8mb4_general_ci NOT NULL,
   `nama_usaha` varchar(155) COLLATE utf8mb4_general_ci NOT NULL,
-  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+  `alamat_usaha` text COLLATE utf8mb4_general_ci NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `status` enum('proses','selesai','ditolak') COLLATE utf8mb4_general_ci NOT NULL DEFAULT 'proses'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `suket_usaha`
 --
 
-INSERT INTO `suket_usaha` (`id_surat`, `nik_pemohon`, `nama_usaha`, `created_at`) VALUES
-(1, '1502084305970001', 'Dagang Ganja', '2024-01-19 14:38:53'),
-(2, '3210000000000000', 'Dagang Ganja', '2024-01-19 15:11:33');
+INSERT INTO `suket_usaha` (`id_surat`, `nik_pemohon`, `nama_usaha`, `alamat_usaha`, `created_at`, `status`) VALUES
+(3, '3207130000000000', 'Martabak Mercon', '', '2024-02-17 15:03:58', 'ditolak'),
+(4, '3207130807000001', 'Dagang Ganja', '', '2024-02-17 15:27:49', 'selesai'),
+(5, '3207130807000001', 'Martabak Mercon 2', 'depan pasar', '2024-02-17 16:06:50', 'selesai'),
+(6, '3207130807000001', 'Martabak Mercon 3', '', '2024-02-17 16:11:13', 'proses');
 
 -- --------------------------------------------------------
 
@@ -6167,7 +6198,7 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`uid`, `username`, `email`, `password`, `role`, `nik`) VALUES
 (1, 'admin', 'admin@gmail.com', '$2y$10$wIF1LL/0dPOdhJVl8OYK8.bH8tNbZe1RMpfmaG6avRS1fYudVfGTa', 'admin', ''),
-(2, 'irpan', 'irpannawawi.ixd@gmail.com', '$2y$10$3deq3HN5wr5Ji2wufHjo5e5zmnTTd7GcepjD4k5p5UG.Jhd2//bWC', 'pengguna', '3207130807000001'),
+(2, 'irpan', 'irpannawawi.ixd@gmail.com', '$2y$10$e5BGkOqx8WVaUwZycpIXh.WUnL427hkfkrnQ7VU7IKbBbtpEGkvyi', 'pengguna', '3207130807000001'),
 (3, 'jajang', 'jajang@gmail.com', '$2y$10$/KVjk4wvX/9LnpojZ5m2HOLVp5M2ChRCAAge3P2UaCWPNoUZ5cbO2', 'pengguna', '1234567890123456'),
 (4, 'jajang', 'jajang@gmail.com', '$2y$10$T.c5pOZA7nh6MiM.bvgscOpNe69OJV7cqBpJZeZ66WYQ1HugtRi06', 'pengguna', '1234567890123456'),
 (5, 'jajang', 'jajang@gmail.com', '$2y$10$u7eQmvkhbl1xV/WCCG.APee17PNi/NVEIiZTQyMxks8lCzRtZWTJG', 'pengguna', '1234567890123456'),
@@ -6242,31 +6273,31 @@ ALTER TABLE `kartu_keluarga`
 -- AUTO_INCREMENT for table `suket_domisili`
 --
 ALTER TABLE `suket_domisili`
-  MODIFY `id_surat` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_surat` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `suket_kelakuan_baik`
 --
 ALTER TABLE `suket_kelakuan_baik`
-  MODIFY `id_surat` int NOT NULL AUTO_INCREMENT;
+  MODIFY `id_surat` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `suket_kematian`
 --
 ALTER TABLE `suket_kematian`
-  MODIFY `id_surat` int NOT NULL AUTO_INCREMENT;
+  MODIFY `id_surat` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `suket_usaha`
 --
 ALTER TABLE `suket_usaha`
-  MODIFY `id_surat` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_surat` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `uid` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `uid` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

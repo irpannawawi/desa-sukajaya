@@ -39,60 +39,69 @@
                                     <th>Tempat Meninggal</th>
                                     <th>Sebab</th>
                                     <th>Tanggal Permohonan</th>
+                                    <th>Status</th>
                                     <th>Aksi</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <?php $n = 0;
-                                foreach ($kematian as $surat):
+                                foreach ($kematian as $surat) :
                                     $n++; ?>
-                                <tr>
-                                    <td>
-                                        <?= $n ?>
-                                    </td>
-                                    <td>
-                                        <?= $surat->nama ?>
-                                    </td>
-                                    <td>
-                                        <?= $surat->nik_pemohon ?>
-                                    </td>
-                                    <td>
-                                        <?php
+                                    <tr>
+                                        <td>
+                                            <?= $n ?>
+                                        </td>
+                                        <td>
+                                            <?= $surat->nama ?>
+                                        </td>
+                                        <td>
+                                            <?= $surat->nik_pemohon ?>
+                                        </td>
+                                        <td>
+                                            <?php
                                             $termohon = $this->db->where('nik', $surat->nik_termohon)->get('masyarakat')->result()[0];
                                             echo $termohon->nama
                                             ?>
-                                    </td>
-                                    <td>
-                                        <?= $surat->tanggal_meninggal ?>
-                                    </td>
-                                    <td>
-                                        <?= $surat->tempat_meninggal ?>
-                                    </td>
-                                    <td>
-                                        <?= $surat->penyebab_meninggal ?>
-                                    </td>
-                                    <td>
-                                        <?= $surat->created_at ?>
-                                    </td>
-
-                                    <td>
-                                        <div class="btn-group">
-                                            <a class="btn btn-sm btn-info text-white"
-                                                href="<?= site_url('download/surat_kematian/'.$surat->id_surat) ?>">
-                                                <i class="fa fa-download"></i>
-                                            </a>
-                                            <a class="btn btn-sm btn-warning text-white"
-                                                href="<?= site_url('admin/surat_kematian/'.$surat->id_surat) ?>">
-                                                <i class="fa fa-edit"></i>
-                                            </a>
-                                            <a class="btn btn-sm btn-danger"
-                                                href="<?= site_url('admin/surat_kematian/delete/' . $surat->id_surat) ?>"
-                                                onclick="return confirm('Hapus data?')">
-                                                <i class="fa fa-trash"></i>
-                                            </a>
-                                        </div>
-                                    </td>
-                                </tr>
+                                        </td>
+                                        <td>
+                                            <?= $surat->tanggal_meninggal ?>
+                                        </td>
+                                        <td>
+                                            <?= $surat->tempat_meninggal ?>
+                                        </td>
+                                        <td>
+                                            <?= $surat->penyebab_meninggal ?>
+                                        </td>
+                                        <td>
+                                            <?= $surat->created_at ?>
+                                        </td>
+                                        <td>
+                                            <?php if ($surat->status == 'proses') : ?>
+                                                <div class="btn-group">
+                                                    <a class="btn btn-sm btn-success text-white" href="<?= site_url('admin/surat_kematian/status/terima/' . $surat->id_surat) ?>">
+                                                        Terima
+                                                    </a>
+                                                    <a class="btn btn-sm btn-danger text-white" href="<?= site_url('admin/surat_kematian/status/tolak/' . $surat->id_surat) ?>">
+                                                        Tolak
+                                                    </a>
+                                                </div>
+                                            <?php else : ?>
+                                                <span class="badge badge-<?= bg_color($surat->status) ?>"><?= ucfirst($surat->status) ?></span>
+                                            <?php endif ?>
+                                        </td>
+                                        <td>
+                                            <div class="btn-group">
+                                                <?php if ($surat->status == 'selesai') : ?>
+                                                <a class="btn btn-sm btn-info text-white" href="<?= site_url('download/surat_kematian/' . $surat->id_surat) ?>">
+                                                    <i class="fa fa-download"></i>
+                                                </a>
+                                                <?php endif ?>
+                                                <a class="btn btn-sm btn-warning text-white" href="<?= site_url('admin/surat_kematian/' . $surat->id_surat) ?>">
+                                                    <i class="fa fa-edit"></i>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
                                 <?php endforeach ?>
                             </tbody>
                         </table>
@@ -169,7 +178,7 @@
                         </table>
                     </div>
                 </div>
-                
+
                 <hr>
                 <div class="form-group">
                     <label for="tanggal_meninggal">Tanggal Meninggal</label>
@@ -197,8 +206,10 @@
 <script>
     function check_nik() {
         nik_pemohon = $('#nik_pemohon').val()
-        url = '<?=site_url('check_nik')?>';
-        $.post(url, { nik: nik_pemohon }, function (data) {
+        url = '<?= site_url('check_nik') ?>';
+        $.post(url, {
+            nik: nik_pemohon
+        }, function(data) {
             pemohon = data
             $('#pemohon_nama').html(pemohon.nama)
             $('#pemohon_alamat').html('DUSUN ' + pemohon.dusun + ' RT. ' + pemohon.rt + ' RW. ' + pemohon.rw)
@@ -206,8 +217,10 @@
         })
 
         nik_termohon = $('#nik_termohon').val()
-        url = '<?=site_url('check_nik')?>';
-        $.post(url, { nik: nik_termohon }, function (data) {
+        url = '<?= site_url('check_nik') ?>';
+        $.post(url, {
+            nik: nik_termohon
+        }, function(data) {
             console.log(data)
             termohon = data
             $('#termohon_nama').html(termohon.nama)

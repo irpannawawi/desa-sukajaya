@@ -35,7 +35,7 @@
                                     <th>Nama Pemohon</th>
                                     <th>Tujuan / Peruntukan</th>
                                     <th>Tanggal permohonan</th>
-                                    <th>Aksi</th>
+                                    <th>Status</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -62,11 +62,7 @@
                                         </td>
 
                                         <td>
-                                            <div class="btn-group">
-                                                <a class="btn btn-sm btn-info text-white" href="<?= site_url('download/surat_domisili/' . $surat->id_surat) ?>">
-                                                    <i class="fa fa-download"></i>
-                                                </a>
-                                            </div>
+                                               <span class="badge badge-<?=bg_color($surat->status)?>"><?=ucfirst($surat->status)?></span>
                                         </td>
                                     </tr>
                                 <?php endforeach ?>
@@ -153,6 +149,7 @@
 
                             <!-- kolom 2 -->
                             <div class="col">
+                                <strong>Alamat Domisili</strong>
                                 <div class="form-group">
                                     <label for="dusun">Dusun</label>
                                     <input name="dusun" id="dusun" class="form-control" required>
@@ -176,6 +173,11 @@
                                 <div class="form-group">
                                     <label for="kabupaten">Kabupaten</label>
                                     <input type="text" class="form-control" name="kabupaten" id="kabupaten" value="Ciamis" required>
+                                </div>
+                                <hr>
+                                <div class="form-group">
+                                    <label for="alamat_asal">Alamat Asal</label>
+                                    <textarea name="alamat_asal" id="" cols="30" rows="10" class="form-control" required></textarea>
                                 </div>
                             </div>
                         </div>

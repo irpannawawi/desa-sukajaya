@@ -35,44 +35,43 @@
                                     <th>Nama Pemohon</th>
                                     <th>Alamat</th>
                                     <th>TTL</th>
+                                    <th>Alamat Usaha</th>
                                     <th>Nama Usaha</th>
                                     <th>Tanggal permohonan</th>
-                                    <th>Aksi</th>
+                                    <th>Status</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <?php $n = 0;
-                                foreach ($keterangan_usaha as $surat):
+                                foreach ($keterangan_usaha as $surat) :
                                     $n++; ?>
-                                <tr>
-                                    <td>
-                                        <?= $n ?>
-                                    </td>
-                                    <td>
-                                        <?= $surat->nama ?>
-                                    </td>
-                                    <td>
-                                        DUSUN <?= $surat->dusun ?> RT. <?= $surat->rt ?> RW.<?= $surat->rw ?> 
-                                    </td>
-                                    <td>
-                                        <?= $surat->tempat_lahir ?>, <?= $surat->tanggal_lahir ?> 
-                                    </td>
-                                    <td>
-                                        <?= $surat->nama_usaha ?>
-                                    </td>
-                                    <td>
-                                        <?= $surat->created_at ?>
-                                    </td>
+                                    <tr>
+                                        <td>
+                                            <?= $n ?>
+                                        </td>
+                                        <td>
+                                            <?= $surat->nama ?>
+                                        </td>
+                                        <td>
+                                            DUSUN <?= $surat->dusun ?> RT. <?= $surat->rt ?> RW.<?= $surat->rw ?>
+                                        </td>
+                                        <td>
+                                            <?= $surat->tempat_lahir ?>, <?= $surat->tanggal_lahir ?>
+                                        </td>
+                                        <td>
+                                            <?= $surat->alamat_usaha ?>
+                                        </td>
+                                        <td>
+                                            <?= $surat->nama_usaha ?>
+                                        </td>
+                                        <td>
+                                            <?= $surat->created_at ?>
+                                        </td>
 
-                                    <td>
-                                        <div class="btn-group">
-                                        <a class="btn btn-sm btn-info text-white"
-                                                href="<?= site_url('download/surat_keterangan_usaha/'.$surat->id_surat) ?>">
-                                                <i class="fa fa-download"></i>
-                                            </a>
-                                        </div>
-                                    </td>
-                                </tr>
+                                        <td>
+                                            <span class="badge badge-<?= bg_color($surat->status) ?>"><?= ucfirst($surat->status) ?></span>
+                                        </td>
+                                    </tr>
                                 <?php endforeach ?>
                             </tbody>
                         </table>
@@ -97,8 +96,8 @@
             </div>
             <?= form_open('public/add_surat_keterangan_usaha') ?>
             <div class="modal-body">
-                
-            <div class="row">
+
+                <div class="row">
                     <div class="col-12">
                         <strong>Data pemohon</strong>
                         <div class="row">
@@ -190,6 +189,12 @@
                     <label for="nama_usaha">Nama Usaha</label>
                     <input type="text" class="form-control" name="nama_usaha" required>
                 </div>
+
+                
+                <div class="form-group">
+                    <label for="alamat_usaha">Alamat Usaha</label>
+                    <input type="text" class="form-control" name="alamat_usaha" required>
+                </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -204,8 +209,10 @@
 <script>
     function check_nik() {
         nik_pemohon = $('#nik_pemohon').val()
-        url = '<?=site_url('check_nik')?>';
-        $.post(url, { nik: nik_pemohon }, function (data) {
+        url = '<?= site_url('check_nik') ?>';
+        $.post(url, {
+            nik: nik_pemohon
+        }, function(data) {
             pemohon = data
             $('#pemohon_nama').html(pemohon.nama)
             $('#pemohon_alamat').html('DUSUN ' + pemohon.dusun + ' RT. ' + pemohon.rt + ' RW. ' + pemohon.rw)
@@ -213,8 +220,10 @@
         })
 
         nik_termohon = $('#nik_termohon').val()
-        url = '<?=site_url('check_nik')?>';
-        $.post(url, { nik: nik_termohon }, function (data) {
+        url = '<?= site_url('check_nik') ?>';
+        $.post(url, {
+            nik: nik_termohon
+        }, function(data) {
             console.log(data)
             termohon = data
             $('#termohon_nama').html(termohon.nama)
@@ -224,29 +233,28 @@
 
     }
 
-    function ganti_tujuan()
-        {
-            tujuan = $('#tujuan').val()
-            form_org = $('#form-termohon')
-            form_lembaga = $('#form-lembaga')
+    function ganti_tujuan() {
+        tujuan = $('#tujuan').val()
+        form_org = $('#form-termohon')
+        form_lembaga = $('#form-lembaga')
 
-            // kosongkan data terlebih dahulu
-            $('#nik_termohon').val('')
-            $('#nama-lembaga').val('')
-            $('#alamat-lembaga').val('')
-            $('#termohon_nama').html('')
-            $('#termohon_alamat').html('')
-            $('#termohon_jenis_kelamin').html('')
+        // kosongkan data terlebih dahulu
+        $('#nik_termohon').val('')
+        $('#nama-lembaga').val('')
+        $('#alamat-lembaga').val('')
+        $('#termohon_nama').html('')
+        $('#termohon_alamat').html('')
+        $('#termohon_jenis_kelamin').html('')
 
-            if(tujuan == 'orang lain'){
-                form_lembaga.addClass('d-none')
-                form_org.removeClass('d-none')
-            }else if(tujuan == 'lembaga'){
-                form_lembaga.removeClass('d-none')
-                form_org.addClass('d-none')
-            }else{
-                form_lembaga.addClass('d-none')
-                form_org.addClass('d-none')
-            }
+        if (tujuan == 'orang lain') {
+            form_lembaga.addClass('d-none')
+            form_org.removeClass('d-none')
+        } else if (tujuan == 'lembaga') {
+            form_lembaga.removeClass('d-none')
+            form_org.addClass('d-none')
+        } else {
+            form_lembaga.addClass('d-none')
+            form_org.addClass('d-none')
         }
+    }
 </script>

@@ -23,6 +23,7 @@ class Kelakuan_baik_controller extends CI_Controller {
 
         $kelakuan_baik_data = [
             'nik_pemohon'=>$this->input->post('nik_pemohon'),
+            'tujuan'=>$this->input->post('tujuan'),
         ];
 
         $res = $this->kelakuan_baik_model->insert($kelakuan_baik_data);
@@ -44,6 +45,7 @@ class Kelakuan_baik_controller extends CI_Controller {
         $id = $this->input->post('id_surat');
         $kelakuan_baik_data = [
             'nik_pemohon'=>$this->input->post('nik_pemohon'),
+            'tujuan'=>$this->input->post('tujuan'),
         ];
 
 
@@ -59,6 +61,24 @@ class Kelakuan_baik_controller extends CI_Controller {
         $res = $this->kelakuan_baik_model->delete($id);
         if($res){
             $this->session->set_flashdata('danger', 'Berhasil menghapus data');
+            return redirect('admin/surat_kelakuan_baik');
+        }
+    }
+
+    public function terima($id)
+    {
+        $res = $this->kelakuan_baik_model->status('selesai', $id);
+        if($res){
+            $this->session->set_flashdata('success', 'Berhasil menyetujui data');
+            return redirect('admin/surat_kelakuan_baik');
+        }
+    }
+
+    public function tolak($id)
+    {
+        $res = $this->kelakuan_baik_model->status('ditolak', $id);
+        if($res){
+            $this->session->set_flashdata('danger', 'Data ditolak');
             return redirect('admin/surat_kelakuan_baik');
         }
     }

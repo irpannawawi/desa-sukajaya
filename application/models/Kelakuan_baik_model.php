@@ -40,4 +40,13 @@ class Kelakuan_baik_model extends CI_Model {
         return $this->db->delete('suket_kelakuan_baik');
     }
 
+    public function status($status, $id)
+    {
+        
+        $this->db->where('id_surat', $id);
+        $this->db->set('status', $status);
+        return $this->db->update('suket_kelakuan_baik');
+        
+    }
+
 }

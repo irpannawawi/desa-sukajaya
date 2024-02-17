@@ -39,6 +39,7 @@
                                     <th>Tujuan / Peruntukan</th>
                                     <th>Tanggal permohonan</th>
                                     <?php if (!empty($_SESSION['role'])) : ?>
+                                        <th>Status</th>
                                         <th>Aksi</th>
                                     <?php endif ?>
                                 </tr>
@@ -66,17 +67,29 @@
                                             <?= $surat->created_at ?>
                                         </td>
                                         <?php if (!empty($_SESSION['role'])) : ?>
-
+                                            <td>
+                                                <?php if ($surat->status == 'proses') : ?>
+                                                    <div class="btn-group">
+                                                        <a class="btn btn-sm btn-success text-white" href="<?= site_url('admin/surat_domisili/status/terima/' . $surat->id_surat) ?>">
+                                                            Terima
+                                                        </a>
+                                                        <a class="btn btn-sm btn-danger text-white" href="<?= site_url('admin/surat_domisili/status/tolak/' . $surat->id_surat) ?>">
+                                                            Tolak
+                                                        </a>
+                                                    </div>
+                                                <?php else : ?>
+                                                    <span class="badge badge-<?= bg_color($surat->status) ?>"><?= ucfirst($surat->status) ?></span>
+                                                <?php endif ?>
+                                            </td>
                                             <td>
                                                 <div class="btn-group">
-                                                    <a class="btn btn-sm btn-info text-white" href="<?= site_url('download/surat_domisili/' . $surat->id_surat) ?>">
-                                                        <i class="fa fa-download"></i>
-                                                    </a>
+                                                    <?php if ($surat->status == 'selesai') : ?>
+                                                        <a class="btn btn-sm btn-info text-white" href="<?= site_url('download/surat_domisili/' . $surat->id_surat) ?>">
+                                                            <i class="fa fa-download"></i>
+                                                        </a>
+                                                    <?php endif ?>
                                                     <a class="btn btn-sm btn-warning text-white" href="<?= site_url('admin/surat_domisili/' . $surat->id_surat) ?>">
                                                         <i class="fa fa-edit"></i>
-                                                    </a>
-                                                    <a class="btn btn-sm btn-danger" href="<?= site_url('admin/surat_domisili/delete/' . $surat->id_surat) ?>" onclick="return confirm('Hapus data?')">
-                                                        <i class="fa fa-trash"></i>
                                                     </a>
                                                 </div>
                                             </td>
@@ -153,6 +166,11 @@
                             </tr>
                         </table>
                     </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                    <label for="alamat_asal">Alamat Asal</label>
+                    <textarea name="alamat_asal" id="" cols="30" rows="10" class="form-control" required>-</textarea>
                 </div>
                 <div class="form-group">
                     <label for="tujuan">Tujuan / Peruntukan</label>

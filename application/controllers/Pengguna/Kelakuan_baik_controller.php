@@ -23,6 +23,7 @@ class Kelakuan_baik_controller extends CI_Controller {
 
         $kelakuan_baik_data = [
             'nik_pemohon'=>$this->input->post('nik_pemohon'),
+            'tujuan'=>$this->input->post('tujuan'),
         ];
 
         $res = $this->kelakuan_baik_model->insert($kelakuan_baik_data);
@@ -44,6 +45,7 @@ class Kelakuan_baik_controller extends CI_Controller {
         $id = $this->input->post('id_surat');
         $kelakuan_baik_data = [
             'nik_pemohon'=>$this->input->post('nik_pemohon'),
+            'tujuan'=>$this->input->post('tujuan'),
         ];
 
 

@@ -36,56 +36,55 @@
                                     <th>NIK pemohon</th>
                                     <th>Alamat</th>
                                     <th>TTL</th>
+                                    <th>Alamat Usaha</th>
                                     <th>Nama Usaha</th>
                                     <th>Tanggal permohonan</th>
+                                    <th>Status</th>
                                     <th>Aksi</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <?php $n = 0;
-                                foreach ($keterangan_usaha as $surat):
+                                foreach ($keterangan_usaha as $surat) :
                                     $n++; ?>
-                                <tr>
-                                    <td>
-                                        <?= $n ?>
-                                    </td>
-                                    <td>
-                                        <?= $surat->nama ?>
-                                    </td>
-                                    <td>
-                                        <?= $surat->nik_pemohon ?>
-                                    </td>
-                                    <td>
-                                        DUSUN <?= $surat->dusun ?> RT. <?= $surat->rt ?> RW.<?= $surat->rw ?> 
-                                    </td>
-                                    <td>
-                                        <?= $surat->tempat_lahir ?>, <?= $surat->tanggal_lahir ?> 
-                                    </td>
-                                    <td>
-                                        <?= $surat->nama_usaha ?>
-                                    </td>
-                                    <td>
-                                        <?= $surat->created_at ?>
-                                    </td>
-
-                                    <td>
-                                        <div class="btn-group">
-                                        <a class="btn btn-sm btn-info text-white"
-                                                href="<?= site_url('download/surat_keterangan_usaha/'.$surat->id_surat) ?>">
-                                                <i class="fa fa-download"></i>
-                                            </a>
-                                            <a class="btn btn-sm btn-warning text-white"
-                                                href="<?= site_url('pengguna/surat_keterangan_usaha/'.$surat->id_surat) ?>">
-                                                <i class="fa fa-edit"></i>
-                                            </a>
-                                            <a class="btn btn-sm btn-danger"
-                                                href="<?= site_url('pengguna/surat_keterangan_usaha/delete/' . $surat->id_surat) ?>"
-                                                onclick="return confirm('Hapus data?')">
-                                                <i class="fa fa-trash"></i>
-                                            </a>
-                                        </div>
-                                    </td>
-                                </tr>
+                                    <tr>
+                                        <td>
+                                            <?= $n ?>
+                                        </td>
+                                        <td>
+                                            <?= $surat->nama ?>
+                                        </td>
+                                        <td>
+                                            <?= $surat->nik_pemohon ?>
+                                        </td>
+                                        <td>
+                                            DUSUN <?= $surat->dusun ?> RT. <?= $surat->rt ?> RW.<?= $surat->rw ?>
+                                        </td>
+                                        <td>
+                                            <?= $surat->tempat_lahir ?>, <?= $surat->tanggal_lahir ?>
+                                        </td>
+                                        <td>
+                                            <?= $surat->alamat_usaha ?>
+                                        </td>
+                                        <td>
+                                            <?= $surat->nama_usaha ?>
+                                        </td>
+                                        <td>
+                                            <?= $surat->created_at ?>
+                                        </td>
+                                        <td>
+                                            <span class="badge badge-<?= bg_color($surat->status) ?>"><?= ucfirst($surat->status) ?></span>
+                                        </td>
+                                        <td>
+                                            <div class="btn-group">
+                                            <?php if($surat->status=='proses'): ?>
+                                                <a class="btn btn-sm btn-warning text-white" href="<?= site_url('pengguna/surat_keterangan_usaha/' . $surat->id_surat) ?>">
+                                                    <i class="fa fa-edit"></i>
+                                                </a>
+                                                <?php endif ?>
+                                            </div>
+                                        </td>
+                                    </tr>
                                 <?php endforeach ?>
                             </tbody>
                         </table>
@@ -114,7 +113,7 @@
                     <div class="col">
                         <div class="form-group">
                             <label for="nik">NIK Pemohon</label>
-                            <input type="text" class="form-control" id="nik_pemohon" name="nik_pemohon" value="<?=$_SESSION['nik']?>" readonly>
+                            <input type="text" class="form-control" id="nik_pemohon" name="nik_pemohon" value="<?= $_SESSION['nik'] ?>" readonly>
                         </div>
                         <strong>Data pemohon</strong>
                         <table class="table table-sm">
@@ -138,6 +137,11 @@
                     <label for="nama_usaha">Nama Usaha</label>
                     <input type="text" class="form-control" name="nama_usaha" required>
                 </div>
+
+                <div class="form-group">
+                    <label for="alamat_usaha">Alamat Usaha</label>
+                    <input type="text" class="form-control" name="alamat_usaha" required>
+                </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -152,8 +156,10 @@
 <script>
     function check_nik() {
         nik_pemohon = $('#nik_pemohon').val()
-        url = '<?=site_url('check_nik')?>';
-        $.post(url, { nik: nik_pemohon }, function (data) {
+        url = '<?= site_url('check_nik') ?>';
+        $.post(url, {
+            nik: nik_pemohon
+        }, function(data) {
             pemohon = data
             $('#pemohon_nama').html(pemohon.nama)
             $('#pemohon_alamat').html('DUSUN ' + pemohon.dusun + ' RT. ' + pemohon.rt + ' RW. ' + pemohon.rw)
@@ -161,8 +167,10 @@
         })
 
         nik_termohon = $('#nik_termohon').val()
-        url = '<?=site_url('check_nik')?>';
-        $.post(url, { nik: nik_termohon }, function (data) {
+        url = '<?= site_url('check_nik') ?>';
+        $.post(url, {
+            nik: nik_termohon
+        }, function(data) {
             console.log(data)
             termohon = data
             $('#termohon_nama').html(termohon.nama)
@@ -172,29 +180,28 @@
 
     }
 
-    function ganti_tujuan()
-        {
-            tujuan = $('#tujuan').val()
-            form_org = $('#form-termohon')
-            form_lembaga = $('#form-lembaga')
+    function ganti_tujuan() {
+        tujuan = $('#tujuan').val()
+        form_org = $('#form-termohon')
+        form_lembaga = $('#form-lembaga')
 
-            // kosongkan data terlebih dahulu
-            $('#nik_termohon').val('')
-            $('#nama-lembaga').val('')
-            $('#alamat-lembaga').val('')
-            $('#termohon_nama').html('')
-            $('#termohon_alamat').html('')
-            $('#termohon_jenis_kelamin').html('')
+        // kosongkan data terlebih dahulu
+        $('#nik_termohon').val('')
+        $('#nama-lembaga').val('')
+        $('#alamat-lembaga').val('')
+        $('#termohon_nama').html('')
+        $('#termohon_alamat').html('')
+        $('#termohon_jenis_kelamin').html('')
 
-            if(tujuan == 'orang lain'){
-                form_lembaga.addClass('d-none')
-                form_org.removeClass('d-none')
-            }else if(tujuan == 'lembaga'){
-                form_lembaga.removeClass('d-none')
-                form_org.addClass('d-none')
-            }else{
-                form_lembaga.addClass('d-none')
-                form_org.addClass('d-none')
-            }
+        if (tujuan == 'orang lain') {
+            form_lembaga.addClass('d-none')
+            form_org.removeClass('d-none')
+        } else if (tujuan == 'lembaga') {
+            form_lembaga.removeClass('d-none')
+            form_org.addClass('d-none')
+        } else {
+            form_lembaga.addClass('d-none')
+            form_org.addClass('d-none')
         }
+    }
 </script>

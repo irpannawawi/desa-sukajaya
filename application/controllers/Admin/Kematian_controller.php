@@ -67,4 +67,22 @@ class Kematian_controller extends CI_Controller {
             return redirect('admin/surat_kematian');
         }
     }
+
+    public function terima($id)
+    {
+        $res = $this->kematian_model->status('selesai', $id);
+        if($res){
+            $this->session->set_flashdata('success', 'Berhasil menyetujui data');
+            return redirect('admin/surat_kematian');
+        }
+    }
+
+    public function tolak($id)
+    {
+        $res = $this->kematian_model->status('ditolak', $id);
+        if($res){
+            $this->session->set_flashdata('danger', 'Data ditolak');
+            return redirect('admin/surat_kematian');
+        }
+    }
 }
